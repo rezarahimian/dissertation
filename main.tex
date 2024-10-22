@@ -1,0 +1,53 @@
+\documentclass[letterpaper,12pt,onecolumn,final]{report}
+
+% = = = Packages
+\input{setup/packages}
+\input{setup/macros}
+\input{sections/footnotes}
+\usepackage[hidelinks]{hyperref}
+
+% = = = Layout
+\oddsidemargin 0.5in
+\evensidemargin 0.5in
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin 0in
+\headsep 0in
+\textheight 8.75in
+\textwidth 6in
+
+% = = = Front Matter
+\begin{document}
+\setstretch{1.25}
+\pagenumbering{roman}
+\input{sections/00-cover}\newpage
+\input{sections/01-sigs}\newpage
+\input{sections/02-abstract}\newpage
+\input{sections/03-ack} \newpage
+\input{sections/04-contents} \newpage   
+       
+% = = = Main Body 
+\setstretch{1.0}
+\pagenumbering{arabic}
+\input{sections/05-body.tex}
+\input{sections/06-background.tex}
+\input{sections/07-shortfall.tex}
+\input{sections/08-leveredge.tex}
+\input{sections/09-multiple.tex}
+\input{sections/10-tokenhook.tex}
+%\input{sections/11-conclusion.tex}
+
+% = = = = = = Bibliography 
+\addcontentsline{toc}{chapter}{Bibliography}  %  Add Bibliography to TOC
+\singlespacing % save space in the bibliography
+\bibliographystyle{abbrv}
+{\small\bibliography{references.bib}}
+\nocite{*}
+
+% = = = = = Appx
+\appendix
+\include{sections/appendices.tex}
+
+% = = = = = = Done 
+
+\end{document}

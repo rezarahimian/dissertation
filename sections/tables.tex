@@ -1,0 +1,572 @@
+% !TEX root = ../main.tex
+
+%<*tab-lvts>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{l|ccccccc|clcccc}
+			\cline{2-8} \cline{11-14}
+			& \multicolumn{7}{c|}{\textbfg{Number of LVTs per year}} & \textbfg{} & \multicolumn{1}{l|}{} & \multicolumn{4}{c|}{\textbfg{Characteristics of LVTs}} \\ \cline{1-9} \cline{11-14} 
+			\multicolumn{1}{|l|}{\textbfg{Issuer}} & \multicolumn{1}{c|}{\textbfg{2019}} & \multicolumn{1}{c|}{\textbfg{2020}} & \multicolumn{1}{c|}{\textbfg{2021}} & \multicolumn{1}{c|}{\textbfg{2022}} & \multicolumn{1}{c|}{\textbfg{2023}} & \multicolumn{1}{c|}{\textbfg{Total}} & \textbfg{Average} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Underlying\\ Assets\end{tabular}}} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Fund\\ Source\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Blockchain\\ Rep.\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Fund Management\\ Algorithm\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Leveraged\\ Product\end{tabular}}} \\ \cline{1-9} \cline{11-14} 
+			\multicolumn{1}{|l|}{MEXC} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{162} & \multicolumn{1}{c|}{116} & \multicolumn{1}{c|}{102} & \multicolumn{1}{c|}{76} & \multicolumn{1}{c|}{456} & 114 & \multicolumn{1}{c|}{217} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\multirow{3}{*}{Internal}} & \multicolumn{1}{c|}{\multirow{4}{*}{No}} & \multicolumn{1}{c|}{\multirow{9}{*}{Off-Chain}} & \multicolumn{1}{c|}{\multirow{9}{*}{Futures}} \\ \cline{1-9}
+			\multicolumn{1}{|l|}{AscendEX} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{228} & \multicolumn{1}{c|}{112} & \multicolumn{1}{c|}{340} & 170 & \multicolumn{1}{c|}{94} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9}
+			\multicolumn{1}{|l|}{Gate.io} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{116} & \multicolumn{1}{c|}{96} & \multicolumn{1}{c|}{54} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{274} & 69 & \multicolumn{1}{c|}{123} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9} \cline{11-11}
+			\multicolumn{1}{|l|}{Pionex} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{60} & \multicolumn{1}{c|}{102} & \multicolumn{1}{c|}{36} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{200} & 50 & \multicolumn{1}{c|}{76} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Internal / External} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9} \cline{11-12}
+			\multicolumn{1}{|l|}{FTX} & \multicolumn{1}{c|}{102} & \multicolumn{1}{c|}{27} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{129} & 65 & \multicolumn{1}{c|}{43} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\multirow{5}{*}{Internal}} & \multicolumn{1}{c|}{Yes} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9} \cline{12-12}
+			\multicolumn{1}{|l|}{KuCoin} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{50} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{38} & \multicolumn{1}{c|}{94} & 31 & \multicolumn{1}{c|}{45} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\multirow{4}{*}{No}} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9}
+			\multicolumn{1}{|l|}{Binance} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{38} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{40} & 20 & \multicolumn{1}{c|}{20} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9}
+			\multicolumn{1}{|l|}{ByDFi} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{24} & \multicolumn{1}{c|}{40} & 20 & \multicolumn{1}{c|}{20} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9}
+			\multicolumn{1}{|l|}{ByBit} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{34} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{34} & 34 & \multicolumn{1}{c|}{17} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} \\ \cline{1-9} \cline{11-14} 
+			\multicolumn{1}{|l|}{Index Coop} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{2} & 2 & \multicolumn{1}{c|}{2} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{External} & \multicolumn{1}{c|}{Yes} & \multicolumn{1}{c|}{On-Chain / Off-Chain} & \multicolumn{1}{c|}{Debt} \\ \cline{1-9} \cline{11-14} 
+			\multicolumn{1}{|l|}{\textbfg{Total}} & \multicolumn{1}{c|}{\textbfg{102}} & \multicolumn{1}{c|}{\textbfg{403}} & \multicolumn{1}{c|}{\textbfg{368}} & \multicolumn{1}{c|}{\textbfg{476}} & \multicolumn{1}{c|}{\textbfg{260}} & \multicolumn{1}{c|}{\textbfg{1609}} & \textbfg{322} & \multicolumn{1}{c|}{\textbfg{654}} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \cline{1-9}
+		\end{tabular}%
+	}
+	\caption{\textsl{Left table:} Number of issued leveraged tokens per year, average per year, and number of unique underlying assets, which we collected manually from different sources. An underlying asset might be used to create multiple tokens with different leverage levels. \textsl{Right table:} Characteristics of issued LVTs by different issuers. Only 20\% of tokens have been created on the blockchain. 99.9\% of LVTs use derivatives as the leveraged product, which is offered by the same issuer (Internal for Pionex as of Jan 2023). Except for \textsl{Index Coop}, the rest of the issuers use off-chain fund management systems. Rebalancing triggers for \textsl{Index Coop} are still off-chain.}
+	\label{tab:lvts}
+\end{table}
+%</tab-lvts>
+
+%<*tab-missing>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|c|c|c|c|c|lccccc}
+			\cline{1-6} \cline{8-12}
+			\multicolumn{1}{|c|}{\multirow{3}{*}{\textbf{Issuer}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Delayed\\ Futures\\ Launch\end{tabular}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Missing\\ Futures\\ Product\end{tabular}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Total\\ Delayed or\\ Missing\end{tabular}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Total\\ Launched\\ LVTs\end{tabular}}} & \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}\% of\\ unbacked\\ LVTs\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Leverage}}} & \multicolumn{2}{c|}{\textbf{Rebalancing Schedule}} & \multicolumn{2}{c|}{\textbf{Fee deduction}} \\ \cline{9-12} 
+			\multicolumn{1}{|c|}{} &  &  &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Regular\\ Daily\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Interim}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Daily\\ Schedule\end{tabular}}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Expense\\ Ration\end{tabular}}} \\ \cline{2-6} \cline{8-12} 
+			\multicolumn{1}{|c|}{} & \textbf{(A)} & \textbf{(B)} & \textbf{(C)} & \textbf{(D)} & \textbf{(E)} & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\textbf{(a)}} & \multicolumn{1}{c|}{\textbf{(b)}} & \multicolumn{1}{c|}{\textbf{(c)}} & \multicolumn{1}{c|}{\textbf{(d)}} & \multicolumn{1}{c|}{\textbf{(e)}} \\ \cline{1-6} \cline{8-12} 
+			AscendEX & 36 & 214 & 250 & 340 & 74\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Fixed} & \multicolumn{1}{c|}{02:30 UTC} & \multicolumn{1}{c|}{10\% TBR / OOR} & \multicolumn{1}{c|}{00:00 UTC} & \multicolumn{1}{c|}{0.500\%} \\ \cline{1-6} \cline{8-12} 
+			Pionex & 0 & 148 & 148 & 200 & 74\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Fixed / Variable} & \multicolumn{1}{c|}{00:00 UTC+8} & \multicolumn{1}{c|}{10\% TBR} & \multicolumn{1}{c|}{\multirow{3}{*}{00:00 UTC+8}} & \multicolumn{1}{c|}{0.030\%} \\ \cline{1-6} \cline{8-10} \cline{12-12} 
+			MEXC & 176 & 12 & 188 & 456 & 71\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\multirow{4}{*}{Fixed}} & \multicolumn{1}{c|}{00:00 UTC} & \multicolumn{1}{c|}{\multirow{2}{*}{15\% TBR}} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{0.100\%} \\ \cline{1-6} \cline{9-9} \cline{12-12} 
+			ByDFi & 16 & 0 & 16 & 40 & 40\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{08:00 UTC+8} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{0.030\%} \\ \cline{1-6} \cline{9-12} 
+			FTX & 18 & 0 & 18 & 129 & 14\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{02:00 UTC} & \multicolumn{1}{c|}{10\% TBR} & \multicolumn{1}{c|}{00:00 UTC} & \multicolumn{1}{c|}{0.030\%} \\ \cline{1-6} \cline{9-12} 
+			Gate.io & 18 & 16 & 34 & 274 & 12\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{00:00 UTC-4} & \multicolumn{1}{c|}{\multirow{3}{*}{10\% TBR / OOR}} & \multicolumn{1}{c|}{00:00 UTC+8} & \multicolumn{1}{c|}{0.300\%} \\ \cline{1-6} \cline{8-9} \cline{11-12} 
+			Binance & 0 & 0 & 0 & 40 & 0\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{\multirow{2}{*}{Variable}} & \multicolumn{1}{c|}{N/A} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\multirow{2}{*}{00:00 UTC}} & \multicolumn{1}{c|}{0.010\%} \\ \cline{1-6} \cline{9-9} \cline{12-12} 
+			ByBit & 0 & 0 & 0 & 34 & 0\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{00:00 UTC} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{0.005\%} \\ \cline{1-6} \cline{8-12} 
+			KuCoin & 0 & 0 & 0 & 94 & 0\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Fixed / Variable} & \multicolumn{1}{c|}{08:00 UTC+8} & \multicolumn{1}{c|}{14\% TBR} & \multicolumn{1}{c|}{23:45 UTC+8} & \multicolumn{1}{c|}{0.045\%} \\ \cline{1-6} \cline{8-12} 
+			Index Coop & 0 & 0 & 0 & 2 & 0\% & \multicolumn{1}{l|}{} & \multicolumn{1}{c|}{Fixed} & \multicolumn{1}{c|}{00:00 UTC} & \multicolumn{1}{c|}{20\% TBR} & \multicolumn{1}{c|}{00:00 UTC} & \multicolumn{1}{c|}{0.023\%} \\ \cline{1-6} \cline{8-12} 
+			\textbf{Total} & \textbf{264} & \textbf{390} & \textbf{654} & \textbf{1609} & \textbf{41\%} &  &  &  &  &  &  \\ \cline{1-6}
+		\end{tabular}%
+	}
+	\caption{\textsl{Left table:} Number of issued LVTs with delayed or missing futures products, analyzed using historical data and undisclosed information. To our knowledge, 41\% of the issued LVTs did not have sufficient financial backing at the time of launch. \textsl{Right table:} Rebalancing and fee deduction schedules, which we collected manually from the issuers' websites. Regardless of leverage type, rebalancing is performed daily at different times. Additionally, Threshold-Based (TBR) or Out of Range (OOR) rebalancing methods are used to trigger interim rebalancing. Fund expenses are also deducted at various times with variable percentages.}
+	\label{tab:missing}
+\end{table}
+%</tab-missing>
+
+%<*tab-frontrunning>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{ll|l|l|l|}
+			\cline{3-5}
+			\multicolumn{2}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Initial\\ State\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}No\\ Front-running\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Front-running\\ (Scenario A)\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Front-running\\ (Scenario B)\end{tabular}}} \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Funding Fee (3  * 0.01\%)}} & \$9,000 & -\$9,900 & -\$9,900 & -\$9,900 \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Management Fee (0.3\%)}} & -\$90,000 & -\$99,000 & -\$99,000 & -\$99,000 \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Futures Basket}} & 1,000 & 1,590.91 & 1,590.91 & 1590.91 \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Futures Price}} & \$30,000 & \$33,000 & \textbf{\$33,330} & \textbf{\$33,660} \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Fund Value}} & \$30,000,000 & \$52,500,030 & \$53,025,030 & \$53,550,030 \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Issued Tokens}} & 600,000 & 700,000 & 700,000 & 700,000 \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Leverage}} & 5.00 & 5.00 & 5.05 & 5.10 \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{BTC5L Price}} & \$10 & \$15 & \textbf{\$15.05} & \textbf{\$15.10} \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Tokens Value}} & \$6,000,000 & \$10,500,000 & \$10,535,000 & \$10,570,000 \\ \hline
+			\multicolumn{1}{|l|}{\textbfg{Basket Delta}} & 2.70 & 594.21 & & \\ \hline
+		\end{tabular}%
+	}
+	\caption{The effect of front-running on the price of the underlying asset and the token during fund rebalancing is shown. The assumption in this example is a downtrend, where the fund initially receives funding fees from short traders and later pays funding fees as the price moves in the long direction of the token.}
+	\label{tab:frontrunning}
+\end{table}
+%</tab-frontrunning>
+
+%<*tab-deviation>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|l|l|l|l|l|l|}
+			\hline
+			\textbfg{Market} & \multicolumn{1}{c|}{\textbfg{Symbol}} & \multicolumn{1}{c|}{\textbfg{Issuer}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Underlying\\      Index/Asset\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{Direction}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Target\\      Leverage\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Leverage\\      Deviation\end{tabular}}} \\ \hline
+			& SPXL &  &  & Long & 3 & \cellcolor[HTML]{8FCA7D}0.13\% \\ \cline{2-2} \cline{5-7} 
+			& SPXS & \multirow{-2}{*}{Direxion} &  & Short & 3 & \cellcolor[HTML]{CBDC81}0.21\% \\ \cline{2-3} \cline{5-7} 
+			& SSO &  &  & Long & 2 & \cellcolor[HTML]{6AC07B}0.08\% \\ \cline{2-2} \cline{5-7} 
+			& SDS &  &  & Short & 2 & \cellcolor[HTML]{BCD780}0.19\% \\ \cline{2-2} \cline{5-7} 
+			& UPRO &  &  & Long & 3 & \cellcolor[HTML]{88C87D}0.12\% \\ \cline{2-2} \cline{5-7} 
+			& SPXU &  & \multirow{-6}{*}{S\&P500 (SPX)} & Short & 3 & \cellcolor[HTML]{FFEB84}0.28\% \\ \cline{2-2} \cline{4-7} 
+			& QLD &  &  & Long & 2 & \cellcolor[HTML]{63BE7B}0.07\% \\ \cline{2-2} \cline{5-7} 
+			& QID &  &  & Short & 2 & \cellcolor[HTML]{D9E081}0.23\% \\ \cline{2-2} \cline{5-7} 
+			& TQQQ &  &  & Long & 3 & \cellcolor[HTML]{8FCA7D}0.13\% \\ \cline{2-2} \cline{5-7} 
+			\multirow{-10}{*}{Equity} & SQQQ & \multirow{-8}{*}{ProShares} & \multirow{-4}{*}{NASDAQ-100   (NDX)} & Short & 3 & \cellcolor[HTML]{FFEB84}0.28\% \\ \hline
+			& BTC3L &  &  & Long & 3 & \cellcolor[HTML]{FCA978}1.22\% \\ \cline{2-2} \cline{5-7} 
+			& BTC3S & \multirow{-2}{*}{MEXC} &  & Short & 3 & \cellcolor[HTML]{FCAE79}1.15\% \\ \cline{2-3} \cline{5-7} 
+			& BTC3L &  &  & Long & 3 & \cellcolor[HTML]{FCAA78}1.21\% \\ \cline{2-2} \cline{5-7} 
+			& BTC3S & \multirow{-2}{*}{ByBit} &  & Short & 3 & \cellcolor[HTML]{FCB279}1.10\% \\ \cline{2-3} \cline{5-7} 
+			& BTC3L &  &  & Long & 3 & \cellcolor[HTML]{FA7D6F}1.84\% \\ \cline{2-2} \cline{5-7} 
+			& BTC3S & \multirow{-2}{*}{KuCoin} &  & Short & 3 & \cellcolor[HTML]{FB9073}1.58\% \\ \cline{2-3} \cline{5-7} 
+			& BTC3L &  &  & Long & 3 & \cellcolor[HTML]{F8696B}2.12\% \\ \cline{2-2} \cline{5-7} 
+			\multirow{-8}{*}{Crypto} & BTC3S & \multirow{-2}{*}{Gate.io} & \multirow{-8}{*}{Bitcoin (BTC-Perp)} & Short & 3 & \cellcolor[HTML]{F96B6C}2.10\% \\ \hline
+		\end{tabular}%
+	}
+	\caption{Comparison of leverage deviation in sample LVTs and LETFs from May 2022 to May 2023. A total of 268 data samples were collected from the issuers' websites.}
+	\label{tab:deviation}
+\end{table}
+%</tab-deviation>
+
+%<*tab-gap>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			\textbfg{\#} & \textbfg{Rebalancing Time} & \textbfg{Gap (days)} & \textbfg{Leverage Before} & \textbfg{Leverage After} & \textbfg{Leverage Adjustment} \\ \hline
+			\textbfg{1} & 03-Apr-2024 04:44 & 22 & 2.004 & 1.582 & 0.422 \\ \hline
+			\textbfg{2} & 12-Mar-2024 02:26 & 5 & 1.740 & 1.529 & 0.211 \\ \hline
+			\textbfg{3} & 06-Mar-2024 06:44 & 10 & 2.492 & 2.716 & -0.224 \\ \hline
+			\textbfg{4} & 25-Feb-2024 20:59 & 11 & 2.266 & 2.033 & 0.233 \\ \hline
+			\textbfg{5} & 14-Feb-2024 11:01 & 24 & 1.872 & 1.980 & -0.108 \\ \hline
+			\textbfg{6} & 22-Jan-2024 19:28 & 21 & 2.064 & 2.017 & 0.047 \\ \hline
+			\textbfg{7} & 02-Jan-2024 07:39 & 71 & 2.257 & 2.484 & -0.227 \\ \hline
+			\textbfg{8} & 23-Oct-2023 23:38 & 294 & 1.924 & 1.770 & -0.154 \\ \hline
+			\textbfg{9} & 03-Jan-2023 22:45 & 204 & 1.996 & 1.511 & -0.485 \\ \hline
+			\textbfg{10} & 13-Jun-2022 10:51 & 143 & 3.766 & 2.469 & -1.297 \\ \hline
+			\textbfg{11} & 21-Jan-2022 01:17 & 22 & 3.444 & 2.529 & -0.915 \\ \hline
+			\textbfg{12} & 30-Dec-2021 19:59 & 52 & 3.120 & 2.514 & -0.606 \\ \hline
+			\textbfg{13} & 08-Nov-2021 07:55 & 25 & 2.269 & 1.807 & -0.462 \\ \hline
+			\textbfg{14} & 14-Oct-2021 22:45 & 8 & 2.566 & 2.205 & -0.361 \\ \hline
+			\textbfg{15} & 06-Oct-2021 15:26 & 15 & 1.935 & 2.483 & 0.548 \\ \hline
+			\textbfg{16} & 21-Sep-2021 20:04 & 11 & 3.033 & 2.519 & -0.514 \\ \hline
+			\textbfg{17} & 10-Sep-2021 18:37 & 147 & 3.208 & 2.521 & -0.687 \\ \hline
+			\textbfg{18} & 16-Apr-2021 12:24 & 0 & 2.029 & 1.956 & -0.073 \\ \hline
+		\end{tabular}%
+	}
+	\caption{BTCUP rebalancing history from May 2021 to April 2024, performed by Binance. The ``Gap'' column indicates the number of days between rebalancing events.}
+	\label{tab:gap}
+\end{table}
+%</tab-gap>
+
+%<*tab-toros>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|c|c|c|cccc|}
+			\hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{\textbfg{\begin{tabular}[c]{@{}c@{}}Token\\ Name\end{tabular}}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbfg{Underlying}}} & \multirow{2}{*}{\textbfg{Direction}} & \multirow{2}{*}{\textbfg{\begin{tabular}[c]{@{}c@{}}Stated\\ Leverage\end{tabular}}} & \multirow{2}{*}{\textbfg{\begin{tabular}[c]{@{}c@{}}Leverage\\ Range\end{tabular}}} & \multicolumn{4}{c|}{\textbfg{Layer 2 deployment}} \\ \cline{6-9} 
+			\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} &  &  &  & \multicolumn{1}{l|}{\textbfg{Polygon}} & \multicolumn{1}{l|}{\textbfg{Optimism}} & \multicolumn{1}{l|}{\textbfg{Arbitrum}} & \multicolumn{1}{l|}{\textbfg{Base}} \\ \hline
+			ETHBEAR1X & ETH & \multirow{3}{*}{Short} & \multirow{3}{*}{-1x} & \multirow{3}{*}{{[}-1.1, -0.9{]}} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} &  \\ \cline{1-2} \cline{6-9} 
+			BTCBEAR1X & BTC &  &  &  & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} &  \\ \cline{1-2} \cline{6-9} 
+			MATICBEAR1X & \multirow{2}{*}{MATIC} &  &  &  & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} &  \\ \cline{1-1} \cline{3-9} 
+			MATICBULL2X &  & \multirow{10}{*}{Long} & \multirow{5}{*}{2x} & \multirow{5}{*}{{[}1.8, 2.2{]}} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} &  \\ \cline{1-2} \cline{6-9} 
+			ETHBULL2X & ETH &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} &  \\ \cline{1-2} \cline{6-9} 
+			BTCBULL2X & BTC &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} &  \\ \cline{1-2} \cline{6-9} 
+			SOLBULL2X & SOL &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{} &  \\ \cline{1-2} \cline{6-9} 
+			STETHBULL2X & SETH &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \checkmark \\ \cline{1-2} \cline{4-9} 
+			ETHBULL3X & ETH &  & \multirow{3}{*}{3x} & \multirow{3}{*}{{[}2.7, 3.3{]}} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{\checkmark} &  \\ \cline{1-2} \cline{6-9} 
+			STETHBULL3X & SETH &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \checkmark \\ \cline{1-2} \cline{6-9} 
+			SOLBULL3X & SOL &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{} &  \\ \cline{1-2} \cline{4-9} 
+			BTCBULL4X & BTC &  & \multirow{2}{*}{4x} & \multirow{2}{*}{{[}3.5, 4.5{]}} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{\checkmark} & \multicolumn{1}{c|}{} &  \\ \cline{1-2} \cline{6-9} 
+			STETHBULL4X & SETH &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \checkmark \\ \hline
+		\end{tabular}%
+	}	
+	\caption{List of Toros tokens on Layer 2 blockchains, each featuring varying leverage range, stated leverage, and different underlying assets (source: toros.finance).}
+	\label{tab:toros}
+\end{table}
+%</tab-toros>
+
+%<*tab-rebalancing>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|cl|rrrrrrrr|}
+			\hline
+			\multicolumn{2}{|c|}{} & \multicolumn{8}{c|}{\textbfg{ETH5L - Before Rebalancing}} \\ \cline{3-10} 
+			\multicolumn{2}{|c|}{\multirow{-2}{*}{\textbfg{ETH5L}}} & \multicolumn{1}{c|}{\textbfg{Day 1}} & \multicolumn{1}{c|}{\textbfg{Day 2}} & \multicolumn{1}{c|}{\textbfg{Day 3}} & \multicolumn{2}{c|}{\textbfg{Day 4}} & \multicolumn{3}{c|}{\textbfg{Day 5}} \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{1}} & \textbfg{Futures Price (S)} & \multicolumn{1}{r|}{\$3,000} & \multicolumn{1}{r|}{\$3,300} & \multicolumn{1}{r|}{\$3,135} & \multicolumn{1}{r|}{\$2,821} & \multicolumn{1}{r|}{\$2,961} & \multicolumn{1}{r|}{\$2,664} & \multicolumn{1}{r|}{\$2,931} & \$3,000 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{2}} & \textbfg{Futures Price Change} & \multicolumn{1}{r|}{0.00\%} & \multicolumn{1}{r|}{10.00\%} & \multicolumn{1}{r|}{-5.00\%} & \multicolumn{1}{r|}{-10.02\%} & \multicolumn{1}{r|}{4.96\%} & \multicolumn{1}{r|}{-10.03\%} & \multicolumn{1}{r|}{10.02\%} & 2.35\% \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{3}} & \textbfg{Fund Basket Size} & \multicolumn{1}{r|}{1.0000} & \multicolumn{1}{r|}{1.0000} & \multicolumn{1}{r|}{1.3636} & \multicolumn{1}{r|}{1.1663} & \multicolumn{1}{r|}{0.6171} & \multicolumn{1}{r|}{0.7102} & \multicolumn{1}{r|}{0.4000} & 0.5458 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{4}} & \textbfg{Fund Notional Value   (V)} & \multicolumn{1}{r|}{\$3,000} & \multicolumn{1}{r|}{\$3,300} & \multicolumn{1}{r|}{\$4,275} & \multicolumn{1}{r|}{\$3,290} & \multicolumn{1}{r|}{\$1,827} & \multicolumn{1}{r|}{\$1,892} & \multicolumn{1}{r|}{\$1,173} & \$1,637 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{5}} & \textbfg{Funding Fee (3*0.01\%)} & \multicolumn{1}{r|}{\$0.90} & \multicolumn{1}{r|}{-\$0.99} & \multicolumn{1}{r|}{\$1.28} & \multicolumn{1}{r|}{\$0.99} & \multicolumn{1}{r|}{-\$0.55} & \multicolumn{1}{r|}{\$0.57} & \multicolumn{1}{r|}{-\$0.35} & -\$0.49 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{6}} & \textbfg{Volatility Factor} & \multicolumn{1}{r|}{1.0} & \multicolumn{1}{r|}{1.0} & \multicolumn{1}{r|}{1.0} & \multicolumn{1}{r|}{2.5} & \multicolumn{1}{r|}{1.0} & \multicolumn{1}{r|}{2.5} & \multicolumn{1}{r|}{3.5} & 1.0 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{7}} & \textbfg{Mgmt. Fee} & \multicolumn{1}{r|}{-\$52.22} & \multicolumn{1}{r|}{-\$57.44} & \multicolumn{1}{r|}{-\$54.57} & \multicolumn{1}{r|}{-\$122.77} & \multicolumn{1}{r|}{-\$51.54} & \multicolumn{1}{r|}{-\$115.93} & \multicolumn{1}{r|}{-\$178.57} & -\$52.22 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{8}} & \textbfg{Fund Net Value} & \multicolumn{1}{r|}{\$2,950} & \multicolumn{1}{r|}{\$3,243} & \multicolumn{1}{r|}{\$4,223} & \multicolumn{1}{r|}{\$3,171} & \multicolumn{1}{r|}{\$1,776} & \multicolumn{1}{r|}{\$1,779} & \multicolumn{1}{r|}{\$997} & \$1,586 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{9}} & \textbfg{Token Supply Change} & \multicolumn{1}{r|}{0} & \multicolumn{1}{r|}{0} & \multicolumn{1}{r|}{50} & \multicolumn{1}{r|}{-30} & \multicolumn{1}{r|}{-20} & \multicolumn{1}{r|}{10} & \multicolumn{1}{r|}{0} & -10 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{10}} & \textbfg{Circulating Tokens} & \multicolumn{1}{r|}{600} & \multicolumn{1}{r|}{600} & \multicolumn{1}{r|}{650} & \multicolumn{1}{r|}{620} & \multicolumn{1}{r|}{600} & \multicolumn{1}{r|}{610} & \multicolumn{1}{r|}{610} & 600 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{11}} & \textbfg{Token Price} & \multicolumn{1}{r|}{\$1.00} & \multicolumn{1}{r|}{\$1.50} & \multicolumn{1}{r|}{\$1.13} & \multicolumn{1}{r|}{\$0.56} & \multicolumn{1}{r|}{\$0.70} & \multicolumn{1}{r|}{\$0.35} & \multicolumn{1}{r|}{\$0.52} & \$0.59 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{12}} & \textbfg{Token Value (NAV)} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$0.98} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$1.08} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$1.30} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$1.02} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$0.59} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$0.58} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$0.33} & \multicolumn{1}{l|}{\cellcolor[HTML]{D9E1F2}\$0.53} \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{13}} & \textbfg{Token Price Change} & \multicolumn{1}{r|}{0.00\%} & \multicolumn{1}{r|}{50.00\%} & \multicolumn{1}{r|}{-25.00\%} & \multicolumn{1}{r|}{-50.08\%} & \multicolumn{1}{r|}{24.81\%} & \multicolumn{1}{r|}{-50.15\%} & \multicolumn{1}{r|}{50.11\%} & 11.77\% \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{14}} & \textbfg{Tokens Value} & \multicolumn{1}{r|}{\$600} & \multicolumn{1}{r|}{\$900} & \multicolumn{1}{r|}{\$731} & \multicolumn{1}{r|}{\$348} & \multicolumn{1}{r|}{\$421} & \multicolumn{1}{r|}{\$213} & \multicolumn{1}{r|}{\$320} & \$352 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{15}} & \textbfg{Tokens Notional Value} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$3,000} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$4,500} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$3,656} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$1,741} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$2,103} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$1,066} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$1,600} & \cellcolor[HTML]{FFE699}\$1,759 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{16}} & \textbfg{Target Leverage} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & 5.00 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{17}} & \textbfg{Realized Leverage} & \multicolumn{1}{r|}{4.92} & \multicolumn{1}{r|}{3.60} & \multicolumn{1}{r|}{5.77} & \multicolumn{1}{r|}{9.11} & \multicolumn{1}{r|}{4.22} & \multicolumn{1}{r|}{8.35} & \multicolumn{1}{r|}{3.12} & 4.51 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{18}} & \textbfg{Tracking Error (\%)} & \multicolumn{1}{r|}{-2\%} & \multicolumn{1}{r|}{-28\%} & \multicolumn{1}{r|}{15\%} & \multicolumn{1}{r|}{82\%} & \multicolumn{1}{r|}{-16\%} & \multicolumn{1}{r|}{67\%} & \multicolumn{1}{r|}{-38\%} & -10\% \\ \hline
+			\multicolumn{2}{|c|}{\textbfg{}} & \multicolumn{8}{c|}{\textbfg{ETH5L -   After Rebalancing}} \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{19}} & \textbfg{Fee Basket Size} & \multicolumn{1}{r|}{-0.0171} & \multicolumn{1}{r|}{-0.0177} & \multicolumn{1}{r|}{-0.0170} & \multicolumn{1}{r|}{-0.0432} & \multicolumn{1}{r|}{-0.0176} & \multicolumn{1}{r|}{-0.0433} & \multicolumn{1}{r|}{-0.0610} & -0.0176 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{20}} & \textbfg{Fund Basket Size} & \multicolumn{1}{r|}{0.9829} & \multicolumn{1}{r|}{0.9823} & \multicolumn{1}{r|}{1.3466} & \multicolumn{1}{r|}{1.1231} & \multicolumn{1}{r|}{0.5996} & \multicolumn{1}{r|}{0.6669} & \multicolumn{1}{r|}{0.3390} & 0.5282 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{21}} & \textbfg{Fund Basket Delta} & \multicolumn{1}{r|}{0.0171} & \multicolumn{1}{r|}{0.3813} & \multicolumn{1}{r|}{-0.1804} & \multicolumn{1}{r|}{-0.5060} & \multicolumn{1}{r|}{0.1106} & \multicolumn{1}{r|}{-0.2668} & \multicolumn{1}{r|}{0.2068} & 0.0580 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{22}} & \textbfg{Fund Basket Size} & \multicolumn{1}{r|}{1.0000} & \multicolumn{1}{r|}{1.3636} & \multicolumn{1}{r|}{1.1663} & \multicolumn{1}{r|}{0.6171} & \multicolumn{1}{r|}{0.7102} & \multicolumn{1}{r|}{0.4000} & \multicolumn{1}{r|}{0.5458} & 0.5863 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{23}} & \textbfg{Fund Notional Value   (V)} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$3,000} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$4,500} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$3,656} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$1,741} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$2,103} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$1,066} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFE699}\$1,600} & \cellcolor[HTML]{FFE699}\$1,759 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{24}} & \textbfg{Rebalanced Leverage} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & \multicolumn{1}{r|}{5.00} & 5.00 \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{25}} & \textbfg{Rebalancing Type} & \multicolumn{1}{r|}{Regular} & \multicolumn{1}{r|}{Regular} & \multicolumn{1}{r|}{Regular} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFFFCC}Interim} & \multicolumn{1}{r|}{Regular} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFFFCC}Interim} & \multicolumn{1}{r|}{\cellcolor[HTML]{FFFFCC}Interim} & Regular \\ \hline
+			\multicolumn{1}{|c|}{\textbfg{26}} & \textbfg{Rebalancing Schedule} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{17:43 UTC} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{06:12 UTC} & \multicolumn{1}{r|}{22:32 UTC} & 00:00 UTC \\ \hline
+		\end{tabular}%
+	}
+	\caption{The rebalancing details of the ETH5L (Ethereum 5x long token) over a 5-day trading period. Interim adjustments are triggered by market fluctuations that exceed the 10\% threshold in a trading day.}
+	\label{tab:rebalancing}
+\end{table}
+%</tab-rebalancing>
+
+%<*tab-voldrag>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|l|l|l|l|l|l|l|l|}
+			\cline{1-3} \cline{5-11}
+			\textbfg{\begin{tabular}[c]{@{}c@{}}Initial\\ Investment\end{tabular}} & \textbfg{Asset} & \textbfg{Leverage} &  & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Day 1\\ 5.0\%\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Day 2\\ 5.0\%\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Day 3\\ -10.0\%\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Day 4\\ -4.5\%\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Day 5\\ 7.0\%\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Day 6\\ 4.0\%\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Day 7\\ -5.0\%\end{tabular}}} \\ \hline
+			\multirow{15}{*}{\$200.00} & \multirow{3}{*}{BTC} & \multirow{3}{*}{1} & \textbfg{Value} & \$210.00 & \$220.50 & \$198.45 & \$189.52 & \$202.79 & \$210.90 & \$200.35 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\$)} & \$10.00 & \$20.50 & -\$1.55 & -\$10.48 & \$2.79 & \$10.90 & \$0.35 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\%)} & 5.00\% & 10.25\% & -0.78\% & -5.24\% & 1.39\% & 5.45\% & 0.18\% \\ \cline{2-11} 
+			& \multirow{3}{*}{BTC3L} & \multirow{3}{*}{3} & \textbfg{Value} & \$230.00 & \$264.50 & \$185.15 & \$160.15 & \$193.79 & \$217.04 & \$184.49 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\$)} & \$30.00 & \$64.50 & -\$14.85 & -\$39.85 & -\$6.21 & \$17.04 & -\$15.51 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\%)} & 15.00\% & 32.25\% & -7.43\% & -19.92\% & -3.11\% & 8.52\% & -7.76\% \\ \cline{2-11} 
+			& \multirow{3}{*}{BTC3S} & \multirow{3}{*}{-3} & \textbfg{Value} & \$170.00 & \$144.50 & \$187.85 & \$213.21 & \$168.44 & \$148.22 & \$170.46 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\$)} & -\$30.00 & -\$55.50 & -\$12.15 & \$13.21 & -\$31.56 & -\$51.78 & -\$29.54 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\%)} & -15.00\% & -27.75\% & -6.07\% & 6.60\% & -15.78\% & -25.89\% & -14.77\% \\ \cline{2-11} 
+			& \multirow{3}{*}{BTC5L} & \multirow{3}{*}{5} & \textbfg{Value} & \$250.00 & \$312.50 & \$156.25 & \$121.09 & \$163.48 & \$196.17 & \$147.13 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\$)} & \$50.00 & \$112.50 & -\$43.75 & -\$78.91 & -\$36.52 & -\$3.83 & -\$52.87 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\%)} & 25.00\% & 56.25\% & -21.88\% & -39.45\% & -18.26\% & -1.91\% & -26.44\% \\ \cline{2-11} 
+			& \multirow{3}{*}{BTC5S} & \multirow{3}{*}{-5} & \textbfg{Value} & \$150.00 & \$112.50 & \$168.75 & \$206.72 & \$134.37 & \$107.49 & \$134.37 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\$)} & -\$50.00 & -\$87.50 & -\$31.25 & \$6.72 & -\$65.63 & -\$92.51 & -\$65.63 \\ \cline{4-11} 
+			&  &  & \textbfg{PNL (\%)} & -25.00\% & -43.75\% & -15.63\% & 3.36\% & -32.82\% & -46.25\% & -32.82\% \\ \hline
+		\end{tabular}%
+	}
+	\caption{Impact of volatility drag on the performance of 3x/5x Bitcoin leveraged tokens during a volatile week. It demonstrates why LVTs are not suitable for long-term investments.}
+	\label{tab:voldrag}
+\end{table}
+%</tab-voldrag>
+
+%<*tab-impl>
+\begin{table}[t]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|c|c|l|}
+			\hline
+			\multicolumn{2}{|c|}{\multirow{2}{*}{\textbfg{\begin{tabular}[c]{@{}c@{}}Vulnerability (Vul.) or \\ Best Practice (BP.)\end{tabular}}}} & \multicolumn{2}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}TokenHook\\ Implementation\end{tabular}}} & \multicolumn{1}{c|}{\multirow{2}{*}{\textbfg{Comment}}} \\ \cline{3-4}
+			\multicolumn{2}{|c|}{} & \textbfg{Vyper} & \textbfg{Solidity} & \multicolumn{1}{c|}{} \\ \hline
+			Arithmetic Over/Under Flows & Vul. & + &  & \begin{tabular}[c]{@{}l@{}}- Vyper includes built-in checks for over/under flows.\\ - \texttt{SafeMath} library is required in Solidity to mitigate the attack.\end{tabular} \\ \hline
+			Re-Entrancy & Vul. & + &  & \begin{tabular}[c]{@{}l@{}}- \texttt{@nonreentrant} decorator places a lock on functions to mitigate the attack.\\ - \texttt{noReentrancy} modifier is required in Solidity.\end{tabular} \\ \hline
+			Unchecked return values & Vul. & + &  & \begin{tabular}[c]{@{}l@{}}- It is already addressed in Vyper.\\ - There is a need in Solidity to check return values explicitly.\end{tabular} \\ \hline
+			Code readability & BP. & + &  & \begin{tabular}[c]{@{}l@{}}- No inheritance in Vyper enforces simpler design.\\ - Solidity allows inline assemblies which is riskier and decreases readability.\end{tabular} \\ \hline
+			Contract complexity & BP. & + &  & - 300 lines in Vyper have the same functionality as the Solidity with 500 lines. \\ \hline
+			Auditable & BP. &  & + & - Most of the auditing tools are able to analyze Solidity contracts. \\ \hline
+			Compatibility & BP. &  & + & \begin{tabular}[c]{@{}l@{}}- Majority of the current Ethereum projects are based on Solidity.\\ - Developers are more familiar with Solidity than Vyper.\end{tabular} \\ \hline
+			Production readiness & BP. &  & + & \begin{tabular}[c]{@{}l@{}}- Vyper is not as mature as Solidity in terms of stability, documentation, etc.\\ - Solidity is adapted by a larger development community.\end{tabular} \\ \hline
+	\end{tabular}%
+	}
+	\caption{Comparison of TokenHook implementation in Vyper and Solidity. The plus sign can be considered as an advantage. However, both versions of TokenHook offer the same level of security.}
+	\label{tab:impl}
+\end{table}
+%</tab-impl>
+
+%<*tab-fee>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|l|l|l|l|l|l|l|c|l|l|l|l|l|l|}
+			\cline{1-7} \cline{9-15}
+			\textbfg{Market} & \multicolumn{1}{c|}{\textbfg{Symbol}} & \multicolumn{1}{c|}{\textbfg{Issuer}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Underlying\\ Index/Asset\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{Leverage}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Annual\\ Expense\\ Ratio\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Daily\\ Expense\\ Ratio\end{tabular}}} &  & \textbfg{Market} & \multicolumn{1}{c|}{\textbfg{Symbol}} & \multicolumn{1}{c|}{\textbfg{Issuer}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Underlying\\ Index/Asset\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{Leverage}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Annual\\ Expense\\ Ratio\end{tabular}}} & \multicolumn{1}{c|}{\textbfg{\begin{tabular}[c]{@{}c@{}}Daily\\ Expense\\ Ratio\end{tabular}}} \\ \cline{1-7} \cline{9-15} 
+			& IVV & BlackRock & S\&P500 & +1x & 0.0300\% & \cellcolor[HTML]{63BE7B}0.000119\% &  &  & BTC3L & ByBit & Bitcoin & +2x to +4x & 1.8250\% & \cellcolor[HTML]{B0D47F}0.005000\% \\ \cline{2-7} \cline{10-15} 
+			& VOO & Vanguard & S\&P500 & +1x & 0.0300\% & \cellcolor[HTML]{63BE7B}0.000119\% &  &  & BTC3S & ByBit & Bitcoin & -2x to -4x & 1.8250\% & \cellcolor[HTML]{B0D47F}0.005000\% \\ \cline{2-7} \cline{10-15} 
+			& SPY & SSGA & S\&P500 & +1x & 0.0945\% & \cellcolor[HTML]{67BF7B}0.000375\% &  &  & BTCUP & Binance & Bitcoin & +1.25 to +4x & 3.6500\% & \cellcolor[HTML]{FFEB84}0.010000\% \\ \cline{2-7} \cline{10-15} 
+			& QQQ & Invesco & NASDAQ-100 & +1x & 0.2000\% & \cellcolor[HTML]{6DC17B}0.000794\% &  &  & BTCDOWN & Binance & Bitcoin & -1.25 to -4x & 3.6500\% & \cellcolor[HTML]{FFEB84}0.010000\% \\ \cline{2-7} \cline{10-15} 
+			& TQQQ & ProShares & NASDAQ-100 & +3x & 0.8600\% & \cellcolor[HTML]{97CD7E}0.003413\% &  &  & BTC3L & Pionex & Bitcoin & +2.2x to +4x & 10.9500\% & \cellcolor[HTML]{FFE383}0.030000\% \\ \cline{2-7} \cline{10-15} 
+			& SH & ProShares & S\&P500 & -1x & 0.8800\% & \cellcolor[HTML]{98CD7E}0.003492\% &  &  & BTC3S & Pionex & Bitcoin & -2.2x to -4x & 10.9500\% & \cellcolor[HTML]{FFE383}0.030000\% \\ \cline{2-7} \cline{10-15} 
+			& SSO & ProShares & S\&P500 & +2x & 0.8900\% & \cellcolor[HTML]{98CD7E}0.003532\% &  &  & BTC3L & ByDFi & Bitcoin & +3x & 10.9500\% & \cellcolor[HTML]{FFE383}0.030000\% \\ \cline{2-7} \cline{10-15} 
+			& SDS & ProShares & S\&P500 & -2x & 0.9000\% & \cellcolor[HTML]{99CD7E}0.003571\% &  &  & BTC3S & ByDFi & Bitcoin & -3x & 10.9500\% & \cellcolor[HTML]{FFE383}0.030000\% \\ \cline{2-7} \cline{10-15} 
+			& SPXU & ProShares & S\&P500 & -3x & 0.9000\% & \cellcolor[HTML]{99CD7E}0.003571\% &  &  & BTC3L & KuCoin & Bitcoin & +3x & 16.4250\% & \cellcolor[HTML]{FFDC81}0.045000\% \\ \cline{2-7} \cline{10-15} 
+			& UPRO & ProShares & S\&P500 & +3x & 0.9100\% & \cellcolor[HTML]{9ACD7E}0.003611\% &  &  & BTC3S & KuCoin & Bitcoin & -3x & 16.4250\% & \cellcolor[HTML]{FFDC81}0.045000\% \\ \cline{2-7} \cline{10-15} 
+			& PSQ & ProShares & NASDAQ-100 & -1x & 0.9500\% & \cellcolor[HTML]{9CCE7E}0.003770\% &  &  & BTC3L & MEXC & Bitcoin & +3x & 36.5000\% & \cellcolor[HTML]{FDC37D}0.100000\% \\ \cline{2-7} \cline{10-15} 
+			& QLD & ProShares & NASDAQ-100 & +2x & 0.9500\% & \cellcolor[HTML]{9CCE7E}0.003770\% &  &  & BTC3S & MEXC & Bitcoin & -3x & 36.5000\% & \cellcolor[HTML]{FDC37D}0.100000\% \\ \cline{2-7} \cline{10-15} 
+			& QID & ProShares & NASDAQ-100 & -2x & 0.9500\% & \cellcolor[HTML]{9CCE7E}0.003770\% &  &  & BTC3L & Gate.io & Bitcoin & +3x & 36.5000\% & \cellcolor[HTML]{FDC37D}0.100000\% \\ \cline{2-7} \cline{10-15} 
+			& SQQQ & ProShares & NASDAQ-100 & -3x & 0.9500\% & \cellcolor[HTML]{9CCE7E}0.003770\% &  &  & BTC3S & Gate.io & Bitcoin & -3x & 36.5000\% & \cellcolor[HTML]{FDC37D}0.100000\% \\ \cline{2-7} \cline{10-15} 
+			& SPXL & Direxion & S\&P500 & +2x & 1.0000\% & \cellcolor[HTML]{9FCF7E}0.003968\% &  &  & BTC3L & AscendEX & Bitcoin & +3x & 109.5000\% & \cellcolor[HTML]{F8696B}0.300000\% \\ \cline{2-7} \cline{10-15} 
+			\multirow{-16}{*}{\textbfg{Equity}} & SPXS & Direxion & S\&P500 & -2x & 1.0800\% & \cellcolor[HTML]{A4D07E}0.004286\% &  & \multirow{-16}{*}{\textbfg{Crypto}} & BTC3S & AscendEX & Bitcoin & -3x & 109.5000\% & \cellcolor[HTML]{F8696B}0.300000\% \\ \cline{1-7} \cline{9-15} 
+		\end{tabular}%
+	}
+	\caption{Comparison of the daily expense ratio in the equity and crypto markets. Each day, the daily fee is deducted from the price of ETFs/LETFs/LVTs, which negatively impacts the ROI. Therefore, investing in assets with lower daily rates (green rows) is less risky with higher return.}
+	\label{tab:dailyfees}
+\end{table}
+%</tab-fee>
+
+%<*tab-compare>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			\textbfg{Design   parameter} & \textbfg{Cube} & \textbfg{FLI} & \textbfg{Contango} & \textbfg{Squeeth} & \textbfg{Toros} & \textbfg{TLX} & \textbfg{LeverEdge} \\ \hline
+			Market & Prediction & Lending & Lending & \cellcolor[HTML]{CCFFCC}Derivatives & Lending & \cellcolor[HTML]{CCFFCC}Derivative & \cellcolor[HTML]{CCFFCC}Derivative \\ \hline
+			Leveraged   Product & Parimutuel & Debt & Debt & Power Perp & Debt & Synthetix & \cellcolor[HTML]{CCFFCC}Perp \\ \hline
+			Oracle price   feed & N/A & \cellcolor[HTML]{CCFFCC}Chainlink & \cellcolor[HTML]{CCFFCC}Chainlink & Uniswap GMA & \cellcolor[HTML]{CCFFCC}Chainlink & \cellcolor[HTML]{CCFFCC}Chainlink & \cellcolor[HTML]{CCFFCC}Chainlink \\ \hline
+			Maximum Long   Leverage & \cellcolor[HTML]{CCFFCC}3x & \cellcolor[HTML]{CCFFCC}3x & \cellcolor[HTML]{CCFFCC}3x & \cellcolor[HTML]{CCFFCC}2x & \cellcolor[HTML]{CCFFCC}3x & \cellcolor[HTML]{CCFFCC}20x & \cellcolor[HTML]{CCFFCC}5x \\ \hline
+			Maximum Short   Leverage & \cellcolor[HTML]{CCFFCC}-3x & -1x & -1x & -1x & -1x & \cellcolor[HTML]{CCFFCC}-20x & \cellcolor[HTML]{CCFFCC}-5x \\ \hline
+			Leverage   Deviation & Very high & \cellcolor[HTML]{f6ffcc}Moderate & \cellcolor[HTML]{f6ffcc}Moderate & Very high & \cellcolor[HTML]{f6ffcc}Moderate & High & \cellcolor[HTML]{f6ffcc}Low \\ \hline
+			Liqudation   protection & No & \cellcolor[HTML]{CCFFCC}Yes & No & No & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes \\ \hline
+			Front-running   protection & No & No & No & No & No & No & \cellcolor[HTML]{f6ffcc}Some \\ \hline
+			Supported   Underlying & Limited & 2 & \cellcolor[HTML]{CCFFCC}Platform & 1 & 2 & \cellcolor[HTML]{CCFFCC}Platform & \cellcolor[HTML]{CCFFCC}Platform \\ \hline
+			Return   function & Non-Linear & \cellcolor[HTML]{CCFFCC}Linear & \cellcolor[HTML]{CCFFCC}Linear & Non-Linear & \cellcolor[HTML]{CCFFCC}Linear & Non-Linear & \cellcolor[HTML]{CCFFCC}Linear \\ \hline
+			Token type & \cellcolor[HTML]{CCFFCC}ERC-20 & \cellcolor[HTML]{CCFFCC}ERC-20 & ERC-721 & \cellcolor[HTML]{CCFFCC}ERC-20 & \cellcolor[HTML]{CCFFCC}ERC-20 & \cellcolor[HTML]{CCFFCC}ERC-20 & \cellcolor[HTML]{CCFFCC}ERC-20 \\ \hline
+			Slippage & \cellcolor[HTML]{CCFFCC}N/A & \cellcolor[HTML]{CCFFCC}1-2\% & \cellcolor[HTML]{CCFFCC}1-2\% & \cellcolor[HTML]{CCFFCC}1-2\% & 2-3\% & \cellcolor[HTML]{CCFFCC}N/A & \cellcolor[HTML]{CCFFCC}1-2\% \\ \hline
+			Non-Upgradable   Contract & Yes & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes & No & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes \\ \hline
+			Verfied   Contract Code & Yes & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes & No & \cellcolor[HTML]{CCFFCC}Yes & \cellcolor[HTML]{CCFFCC}Yes \\ \hline
+			Regional   restriction & \cellcolor[HTML]{CCFFCC}No & Yes & \cellcolor[HTML]{CCFFCC}No & Yes & \cellcolor[HTML]{CCFFCC}No & \cellcolor[HTML]{CCFFCC}No & \cellcolor[HTML]{CCFFCC}No \\ \hline
+			Fees & 3.5-5\% & 3.65-5.48\% & \cellcolor[HTML]{CCFFCC}2-3\% & 3-5\% & \cellcolor[HTML]{CCFFCC}2-3\% & 2.5-3.5\% & \cellcolor[HTML]{CCFFCC}2-3\% \\ \hline
+			Daily funding   rate & N/A & \cellcolor[HTML]{CCFFCC}0.01-0.02\% & \cellcolor[HTML]{CCFFCC}0.01-0.02\% & 0.1-0.5\% & \cellcolor[HTML]{CCFFCC}0.01-0.02\% & \cellcolor[HTML]{CCFFCC}0.01-0.03\% & \cellcolor[HTML]{CCFFCC}0.01-0.03\% \\ \hline
+		\end{tabular}%
+	}
+	\caption{Comparison of on-chain LVTs. Deficiencies in the parameters highlighted in green have been fully rectified, and partially for parameters in yellow.}
+	\label{tab:compare}
+\end{table}
+%</tab-compare>
+
+%<*tab-solutions>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|p{0.020\linewidth}|p{0.35\linewidth}|p{0.65\linewidth}|}
+			\hline
+			\textbfg{\#} & \textbfg{Deficiency} & \textbfg{Proposed Solutions} \\ \hline
+			1 & Inability to custody & \multirow{7}{*}{\parbox{10cm}{Implementing tokens on the blockchain enables holders to directly control their tokens. The total token supply is easily accessible, and all token transactions are recorded on an immutable ledger. This allows investors to see how many tokens are held by each address. Auditors can also verify token code and events to ensure proper functionality and financial backing.}} \\ \cline{1-2}
+			2 & Transparency in total supply &  \\ \cline{1-2}
+			3 & Transparency in transactions &  \\ \cline{1-2}
+			4 & Transparency in token holders &  \\ \cline{1-2}
+			5 & Interoperability with DeFi &  \\ \cline{1-2}
+			6 & Challenges in auditing &  \\ \cline{1-2}
+			7 & Inadequate financial backing &  \\ \hline
+			8 & Possibility of Front-running & Randomized rebalancing or using iceberg orders. \\ \hline
+			9 & Higher tracking error & Optimization of rebalancing algorithms. \\ \hline
+			10 & Higher management fees & Cross-trading or implementation on the layer 2 chains. \\ \hline
+		\end{tabular}%
+	}
+	\caption{Summary of deficiencies in existing LVTs and proposed solutions.}
+	\label{tab:solutions}
+\end{table}
+%</tab-solutions>
+
+%<*tab-result1>
+\begin{table}
+	\centering
+	\begin{adjustbox}{max height=10cm}		
+		\begin{tabular}{|P{3mm}|P{7mm}|m{165mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|}
+			\multicolumn{3}{c}{\.} &
+			\headrow{EY Token Review} &
+			\headrow{Smart Check} &
+			\headrow{Securify} &
+			\headrow{MythX (Mythril)} &
+			\headrow{Contract Guard} &
+			\headrow{Slither} &
+			\headrow{Odin} \\ \hline
+			
+			\rcl\ccl & \ccl & \tx{Vulnerability or best practice} & \multicolumn{7}{c|}{\ccl} \\ \cline{3-3}
+			\rcl\multirow{-2}{*}{\ccl\tx{ID}} & \multirow{-2}{*}{\ccl\tx{SWC}} & Mitigation or recommendation & \multicolumn{7}{c|}{\multirow{-2}{*}{\ccl\tx{Security tools}}} \\ \hline
+			
+			\multirow{2}{*}{1} & \multirow{2}{*}{100} & \tx{Function default visibility} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3} & & Specifying function visibility, external, public, internal or private & & & & & & & \\ \hline
+			\multirow{2}{*}{2} & \multirow{2}{*}{101} & \tx{Integer Overflow and Underflow} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\info} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Utilizing the SafeMath library to mitigate over/under value assignments & & & & & & & \\ \hline
+			\multirow{2}{*}{3} & \multirow{2}{*}{102} & \tx{Outdated Compiler Version} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\fail} \\ \cline{3-3}
+			& & Using proper Solidity version to protect against compiler attacks & & & & & & & \\ \hline
+			\multirow{2}{*}{4} & \multirow{2}{*}{103} & \tx{Floating Pragma} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Locking the pragma to avoid deployments using outdated compiler version & & & & & & & \\ \hline
+			\multirow{2}{*}{5} & \multirow{2}{*}{104} & \tx{Unchecked Call Return Value} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Checking call() return value to prevent unexpected behavior in DApps & & & & & & & \\ \hline
+			\multirow{2}{*}{6} & \multirow{2}{*}{105} & \tx{Unprotected Ether Withdrawal} & \multirow{2}{*}{\na} & \multirow{2}{*}{\info} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Authorizing only trusted parties to trigger ETH withdrawals & & & & & & & \\ \hline
+			\multirow{2}{*}{7} & \multirow{2}{*}{106} & \tx{Unprotected SELFDESTRUCT Instruction} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Removing self-destruct functionality or approving it by multiple parties & & & & & & & \\ \hline
+			\multirow{2}{*}{8} & \multirow{2}{*}{107} & \tx{Re-entrancy} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using CEI and Mutex to mitigate self-function and cross-function attack & & & & & & & \\ \hline
+			\multirow{2}{*}{9} & \multirow{2}{*}{108} & \tx{State variable default visibility} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Specifying visibility of all variables, public, private or internal & & & & & & & \\ \hline
+			\multirow{2}{*}{10} & \multirow{2}{*}{109} & \tx{Uninitialized Storage Pointer} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Initializing variables upon declaration to prevent unexpected storage access & & & & & & & \\ \hline
+			\multirow{2}{*}{11} & \multirow{2}{*}{110} & \tx{Assert Violation} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using require() statement to validate inputs, checking efficiency of the code & & & & & & & \\ \hline
+			\multirow{2}{*}{12} & \multirow{2}{*}{111} & \tx{Use of Deprecated Solidity Functions} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using new alternatives functions such as keccak256() instead of sha3() & & & & & & & \\ \hline
+			\multirow{2}{*}{13} & \multirow{2}{*}{112} & \tx{Delegatecall to untrusted callee} & \multirow{2}{*}{\na} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Calling into trusted contracts to avoid storage access by malicious contracts & & & & & & & \\ \hline
+			\multirow{2}{*}{14} & \multirow{2}{*}{113} & \tx{DoS with Failed Call} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Avoid multiple external calls where one error may fail other transactions & & & & & & & \\ \hline
+			\multirow{2}{*}{15} & \multirow{2}{*}{114} & \tx{Transaction Order Dependence} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Preventing race conditions by securing approve() or transferFrom() & & & & & & & \\ \hline
+			\multirow{2}{*}{16} & \multirow{2}{*}{115} & \tx{Authorization through tx.origin} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using msg.sender to authorize transaction initiator instead of originator & & & & & & & \\ \hline
+			\multirow{2}{*}{17} & \multirow{2}{*}{116} & \tx{Block values as a proxy for time} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Not using block.timestamp or block.number to perform functionalities & & & & & & & \\ \hline
+			\multirow{2}{*}{18} & \multirow{2}{*}{117} & \tx{Signature Malleability} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Not using signed message hash to avoid signatures alteration & & & & & & & \\ \hline
+			\multirow{2}{*}{19} & \multirow{2}{*}{118} & \tx{Incorrect Constructor Name} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using constructor keyword which does not match with contract name & & & & & & & \\ \hline
+			\multirow{2}{*}{20} & \multirow{2}{*}{119} & \tx{Shadowing State Variables} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Removing any variable ambiguities when inheriting other contracts & & & & & & & \\ \hline
+			\multirow{2}{*}{21} & \multirow{2}{*}{120} & \tx{Weak Sources of Randomness from Chain Attributes} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using oracles as source of randomness instead of block.timestamp & & & & & & & \\ \hline
+			\multirow{2}{*}{22} & \multirow{2}{*}{121} & \tx{Missing Protection against Signature Replay Attacks} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Storing every message hash to perform signature verification & & & & & & & \\ \hline
+			\multirow{2}{*}{23} & \multirow{2}{*}{122} & \tx{Lack of Proper Signature Verification} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using alternate verification schemes if allowing off-chain signing & & & & & & & \\ \hline
+			\multirow{2}{*}{24} & \multirow{2}{*}{123} & \tx{Requirement Violation} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Checking the code for allowing only valid external inputs & & & & & & & \\ \hline
+			\multirow{2}{*}{25} & \multirow{2}{*}{124} & \tx{Write to Arbitrary Storage Location} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Controlling write to storage to prevent storage corruption by attackers & & & & & & & \\ \hline
+			\multirow{2}{*}{26} & \multirow{2}{*}{125} & \tx{Incorrect Inheritance Order} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Inheriting from more general to specific when there are identical functions & & & & & & & \\ \hline
+			\multirow{2}{*}{27} & \multirow{2}{*}{126} & \tx{Insufficient Gas Griefing} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Allowing trusted forwarders to relay transactions & & & & & & & \\ \hline
+		\end{tabular}
+	\end{adjustbox}
+	\caption{Auditing results of 7 smart contract analysis tools on TokenHook. \pass=Passed audit, \fp=False positive, \fail=Failed audit, Empty=Not supported audit by the tool, \info=Informational, \noSWC=Tool specific audit (No SWC registry), BP=Best practice\label{tab:result1}}
+\end{table}
+%</tab-result1>
+
+%<*tab-result2>
+\begin{table}
+	\centering
+	\begin{adjustbox}{max height=10cm}
+		\begin{tabular}{|P{3mm}|P{7mm}|m{165mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|P{3mm}|}
+			\multicolumn{3}{c}{\.} &
+			\headrow{EY Token Review} &
+			\headrow{Smart Check} &
+			\headrow{Securify} &
+			\headrow{MythX (Mythril)} &
+			\headrow{Contract Guard} &
+			\headrow{Slither} &
+			\headrow{Odin} \\ \hline
+			
+			\rcl\ccl & \ccl & \tx{Vulnerability or best practice} & \multicolumn{7}{c|}{\ccl} \\ \cline{3-3}
+			\rcl\multirow{-2}{*}{\ccl\tx{ID}} & \multirow{-2}{*}{\ccl\tx{SWC}} & Mitigation or recommendation & \multicolumn{7}{c|}{\multirow{-2}{*}{\ccl\tx{Security tools}}} \\ \hline
+			
+			\multirow{2}{*}{28} & \multirow{2}{*}{127} & \tx{Arbitrary Jump with Function Type Variable} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Minimizing use of assembly in the code & & & & & & & \\ \hline
+			\multirow{2}{*}{29} & \multirow{2}{*}{128} & \tx{DoS With Block Gas Limit} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Avoiding loops across the code that may consume considerable resources & & & & & & & \\ \hline
+			\multirow{2}{*}{30} & \multirow{2}{*}{129} & \tx{Typographical Error} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Using SafeMath library or performing checks on any math operation & & & & & & & \\ \hline
+			\multirow{2}{*}{31} & \multirow{2}{*}{130} & \tx{Right-To-Left-Override control character (U+202E)} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3}
+			& & Avoiding U+202E character which forces RTL text rendering & & & & & & & \\ \hline
+			\multirow{2}{*}{32} & \multirow{2}{*}{131} & \tx{Presence of unused variables} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\fp} \\ \cline{3-3} & & Removing all unused variables to decrease gas consumption & & & & & & & \\ \hline
+			\multirow{2}{*}{33} & \multirow{2}{*}{132} & \tx{Unexpected Ether balance} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} \\ \cline{3-3} & & Avoiding Ether balance check in the code (\eg this.balance == 0.24 Ether) & & & & & & & \\ \hline
+			\multirow{2}{*}{34} & \multirow{2}{*}{133} & \tx{Hash Collisions With Variable Length Arguments} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3} & & Using abi.encode() instead of abi.encodePacked() to prevent hash collision & & & & & & & \\ \hline
+			\multirow{2}{*}{35} & \multirow{2}{*}{134} & \tx{Message call with hardcoded gas amount} & \multirow{2}{*}{\na} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\fp} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3} & & Using .call.value()("") which is compatible with EIP1884 & & & & & & & \\ \hline
+			\multirow{2}{*}{36} & \multirow{2}{*}{135} & \tx{Code With No Effects} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3} & & Writing unit tests to ensure producing the intended effects by DApps & & & & & & & \\ \hline
+			\multirow{2}{*}{37} & \multirow{2}{*}{136} & \tx{Unencrypted Private Data On-Chain} & \multirow{2}{*}{\na} & \multirow{2}{*}{\info} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} \\ \cline{3-3} & & Storing un-encrypted private data off-chain & & & & & & & \\ \hline
+			\multirow{2}{*}{38} & \multirow{2}{*}{\noSWC} & \tx{Allowance decreases upon transfer} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Decreasing allowance in transferFrom() method & & & & & & & \\ \hline
+			\multirow{2}{*}{39} & \multirow{2}{*}{\noSWC} & \tx{Allowance function returns an accurate value} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Returning only value from the mapping instead of internal function logic & & & & & & & \\ \hline
+			\multirow{2}{*}{40} & \multirow{2}{*}{\noSWC} & \tx{It is possible to cancel an existing allowance} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Possibility of setting allowance to 0 to revoke previous allowances & & & & & & & \\ \hline
+			\multirow{2}{*}{41} & \multirow{2}{*}{\noSWC} & \tx{A transfer with an insufficient amount is reverted} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Checking balances in transfer() method before updating balances & & & & & & & \\ \hline
+			\multirow{2}{*}{42} & \multirow{2}{*}{\noSWC} & \tx{Upon sending funds, the sender's balance is updated} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Updating balances in transfer() or transferFrom() methods & & & & & & & \\ \hline
+			\multirow{2}{*}{43} & \multirow{2}{*}{\noSWC} & \tx{The Transfer event correctly logged} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Emitting Transfer event in transfer() or transferFrom() functions & & & & & & & \\ \hline
+			\multirow{2}{*}{44} & \multirow{2}{*}{\noSWC} & \tx{Transfer an amount that is greater than the allowance} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Checking balances in transferFrom() method before updating balances & & & & & & & \\ \hline
+			\multirow{2}{*}{45} & \multirow{2}{*}{\noSWC} & \tx{Risk of short address attack is minimized} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Using recent Solidity version to mitigate the attack & & & & & & & \\ \hline
+			\multirow{2}{*}{46} & \multirow{2}{*}{\noSWC} & \tx{Function names are unique} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & No function overloading to avoid unexpected behavior & & & & & & & \\ \hline
+			\multirow{2}{*}{47} & \multirow{2}{*}{\noSWC} & \tx{Using miner controlled variables} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Avoiding block.number, block.timestamp, block.difficulty, now, etc & & & & & & & \\ \hline
+			\multirow{2}{*}{48} & \multirow{2}{*}{\noSWC} & \tx{Use of return in constructor} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Not using return in contract's constructor & & & & & & & \\ \hline
+			\multirow{2}{*}{49} & \multirow{2}{*}{\noSWC} & \tx{Throwing exceptions in transfer() and transferFrom()} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Returning true after successful execution or raising exception in failures & & & & & & & \\ \hline
+			\multirow{2}{*}{50} & \multirow{2}{*}{\noSWC} & \tx{State variables that could be declared constant} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Adding constant attribute to variables like name, symbol, decimals, etc & & & & & & & \\ \hline
+			\multirow{2}{*}{51} & \multirow{2}{*}{\noSWC} & \tx{Tautology or contradiction} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Fixing comparison in the code that are always true or false & & & & & & & \\ \hline
+			\multirow{2}{*}{52} & \multirow{2}{*}{\noSWC} & \tx{Divide before multiply} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Ordering multiplication prior division to avoid integer truncation & & & & & & & \\ \hline
+			\multirow{2}{*}{53} & \multirow{2}{*}{\noSWC} & \tx{Unchecked Send} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Ensuring that the return value of send() is always checked & & & & & & & \\ \hline
+			\multirow{2}{*}{54} & \multirow{2}{*}{\BP} & \tx{Too many digits} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Using scientific notation to make the code readable and simpler to debug & & & & & & & \\ \hline
+		\end{tabular}
+	\end{adjustbox}	
+	\caption{Continuation of Table\ref{tab:result1}.\label{tab:result2}}
+\end{table}
+%</tab-result2>
+
+%<*tab-result3>
+\begin{table}
+	\centering
+	\begin{adjustbox}{max height=10cm}
+		\begin{tabular}{|P{3mm}|P{7mm}|m{150mm}|P{7mm}|P{7mm}|P{7mm}|P{7mm}|P{7mm}|P{7mm}|P{7mm}|}
+			\multicolumn{3}{c}{\.} &
+			\headrow{EY Token Review} &
+			\headrow{Smart Check} &
+			\headrow{Securify} &
+			\headrow{MythX (Mythril)} &
+			\headrow{Contract Guard} &
+			\headrow{Slither} &
+			\headrow{Odin} \\ \hline
+			
+			\rcl\ccl & \ccl & \tx{Vulnerability or best practice} & \multicolumn{7}{c|}{\ccl} \\ \cline{3-3}
+			\rcl\multirow{-2}{*}{\ccl\tx{ID}} & \multirow{-2}{*}{\ccl\tx{SWC}} & Mitigation or recommendation & \multicolumn{7}{c|}{\multirow{-2}{*}{\ccl\tx{Security tools}}} \\ \hline
+			
+			\multirow{2}{*}{55} & \multirow{2}{*}{\BP} & \tx{The decreaseAllowance definition follows the standard} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Defining decreaseAllowance input and output variables as standard & & & & & & & \\ \hline
+			\multirow{2}{*}{56} & \multirow{2}{*}{\BP} & \tx{The increaseAllowance definition follows the standard} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Defining increaseAllowance input and output variables as standard & & & & & & & \\ \hline
+			\multirow{2}{*}{57} & \multirow{2}{*}{\BP} & \tx{Minimize attack surface} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Checking whether all the external functions are necessary or not & & & & & & & \\ \hline
+			\multirow{2}{*}{58} & \multirow{2}{*}{\BP} & \tx{Transfer to the burn address is reverted} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Reverting transfer to 0x0 due to risk of total supply reduction & & & & & & & \\ \hline
+			\multirow{2}{*}{59} & \multirow{2}{*}{\BP} & \tx{Source code is decentralized} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Not using hard-coded addresses in the code & & & & & & & \\ \hline
+			\multirow{2}{*}{60} & \multirow{2}{*}{\BP} & \tx{Funds can be held only by user-controlled wallets} & \multirow{2}{*}{\info} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Transferring tokens to users to avoid creating a secondary market & & & & & & & \\ \hline
+			\multirow{2}{*}{61} & \multirow{2}{*}{\BP} & \tx{Code logic is simple to understand} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Avoiding code nesting which makes the code less intuitive & & & & & & & \\ \hline
+			\multirow{2}{*}{62} & \multirow{2}{*}{\BP} & \tx{All functions are documented} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} &\multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Using NatSpec format to explain expected behavior of functions & & & & & & & \\ \hline
+			\multirow{2}{*}{63} & \multirow{2}{*}{\BP} & \tx{The Approval event is correctly logged} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Emitting Approval event in the approve() method & & & & & & & \\ \hline
+			\multirow{2}{*}{64} & \multirow{2}{*}{\BP} & \tx{Acceptable gas cost of the approve() function} & \multirow{2}{*}{\info} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Checking for maximum 50000 gas cost when executing the approve() & & & & & & & \\ \hline
+			\multirow{2}{*}{65} & \multirow{2}{*}{\BP} & \tx{Acceptable gas cost of the transfer() function} & \multirow{2}{*}{\info} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Checking for maximum 60000 gas cost when executing the transfer() & & & & & & & \\ \hline
+			\multirow{2}{*}{66} & \multirow{2}{*}{\BP} & \tx{Emitting event when state changes} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Emitting Change event when changing state variable values & & & & & & & \\ \hline
+			\multirow{2}{*}{67} & \multirow{2}{*}{\BP} & \tx{Use of unindexed arguments} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Using indexed arguments to facilitate external tools log searching & & & & & & & \\ \hline
+			\multirow{2}{*}{68} & \multirow{2}{*}{\BP} & \tx{ERC-20 compliance} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Implementing all 6 functions and 2 events as specified in EIP-20 & & & & & & & \\ \hline
+			\multirow{2}{*}{69} & \multirow{2}{*}{\BP} & \tx{Conformance to naming conventions} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Following the Solidity naming convention to avoid confusion & & & & & & & \\ \hline
+			\multirow{2}{*}{70} & \multirow{2}{*}{\BP} & \tx{Token decimal} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Declaring token decimal for external apps when displaying balances & & & & & & & \\ \hline
+			\multirow{2}{*}{71} & \multirow{2}{*}{\BP} & \tx{Locked money (Freezing ETH)} & \multirow{2}{*}{\na} &\multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Implementing withdraw/reject functions to avoid ETH lost & & & & & & & \\ \hline
+			\multirow{2}{*}{72} & \multirow{2}{*}{\BP} & \tx{Malicious libraries} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Not using modifiable third-party libraries & & & & & & & \\ \hline
+			\multirow{2}{*}{73} & \multirow{2}{*}{\BP} & \tx{Payable fallback function} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Adding either fallback() or receive() function to receive ETH & & & & & & & \\ \hline
+			\multirow{2}{*}{74} & \multirow{2}{*}{\BP} & \tx{Prefer external to public visibility level} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Improving the performance by replacing public with external & & & & & & & \\ \hline
+			\multirow{2}{*}{75} & \multirow{2}{*}{\BP} & \tx{Token name} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Adding a token name variable for external apps & & & & & & & \\ \hline
+			\multirow{2}{*}{76} & \multirow{2}{*}{\BP} & \tx{Error information in revert condition} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Adding error description in require()/revert() to clarify the reason & & & & & & & \\ \hline
+			\multirow{2}{*}{77} & \multirow{2}{*}{\BP} & \tx{Complex Fallback} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Logging operations in the fallback() to avoid complex operations & & & & & & & \\ \hline
+			\multirow{2}{*}{78} & \multirow{2}{*}{\BP} & \tx{Function Order} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Following fallback, external, public, internal and private order & & & & & & & \\ \hline
+			\multirow{2}{*}{79} & \multirow{2}{*}{\BP} & \tx{Visibility Modifier Order} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Specifying visibility first and before modifiers in functions & & & & & & & \\ \hline
+			\multirow{2}{*}{80} & \multirow{2}{*}{\BP} & \tx{Non-initialized return value} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Not specifying return for functions without output & & & & & 6& & \\ \hline
+			\multirow{2}{*}{81} & \multirow{2}{*}{\BP} & \tx{Token symbol} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Adding token symbol variable for usage of external apps & & & & & & & \\ \hline
+			\multirow{2}{*}{82} & \multirow{2}{*}{\BP} & \tx{Allowance spending is possible} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Ability of token transfer by transferFrom() to transfer tokens on behalf of another usercalc & & & & & & & \\ \hline
+			
+			\hline
+			\rcl
+			\multicolumn{3}{|c|}{\ccl\tx{\begin{tabular}[c]{@{}c@{}}99.5\% success rate in performed audits by considering\\ 'False Positives' and 'Informational' checks as 'Passed' \end{tabular}}}  & 100\% & 100\% & 100\% & 100\% & 100\% & 100\% & 97\% \\ \hline
+		\end{tabular}
+	\end{adjustbox}	
+	\caption{Continuation of Table\ref{tab:result2}.\label{tab:result3}}
+\end{table}
+%</tab-result3>
+
+%<*tab-summary>
+\begin{table}[t]
+	\centering
+	\scalebox{0.85}{
+		\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+			\rcl
+			\multicolumn{1}{|c|}{\ccl} & \multicolumn{7}{c|}{\ccl\tx{Auditing Tool}} & \ccl \\ \cline{2-8}
+			\rcl 
+			\multicolumn{1}{|c|}{\multirow{-2}{*}{\ccl\tx{\begin{tabular}[c]{@{}c@{}}ERC-20\\ Token\end{tabular}}}} & \begin{tabular}[c]{@{}c@{}}EY Token\\ Review\end{tabular} & \begin{tabular}[c]{@{}c@{}}Smart\\ Check\end{tabular} & Securify & \begin{tabular}[c]{@{}c@{}}MythX\\ (Mythril)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Contract\\ Guard\end{tabular} & Slither & Odin & \multirow{-2}{*}{\ccl\tx{\begin{tabular}[c]{@{}c@{}}Total\\ issues\end{tabular}}} \\ \hline
+			\tx{TokenHook} & 9 & 11 & 4 & 2 & 10 & 2 & 2 & \tx{40} \\ \hline
+			\tx{TUSD} & 20 & 11 & 2 & 1 & 14 & 16 & 6 & \tx{70} \\ \hline
+			\tx{PAX} & 16 & 9 & 6 & 4 & 16 & 13 & 9 & \tx{73} \\ \hline
+			\tx{USDC} & 17 & 9 & 6 & 5 & 18 & 15 & 10 & \tx{80} \\ \hline
+			\tx{INO} & 11 & 10 & 14 & 8 & 14 & 24 & 12 & \tx{93} \\ \hline
+			\tx{HEDG} & 10 & 28 & 11 & 1 & 29 & 24 & 16 & \tx{119} \\ \hline
+			\tx{BNB} & 13 & 21 & 12 & 13 & 41 & 39 & 3 & \tx{142} \\ \hline
+			\tx{MKR} & 11 & 27 & 38 & 9 & 16 & 34 & 18 & \tx{153} \\ \hline
+			\tx{LINK} & 12 & 27 & 38 & 9 & 16 & 34 & 18 & \tx{181} \\ \hline
+			\tx{USDT} & 12 & 29 & 8 & 17 & 46 & 55 & 30 & \tx{197} \\ \hline
+			\tx{LEO} & 32 & 25 & 8 & 23 & 70 & 75 & 19 & \tx{252} \\ \hline
+	\end{tabular}}
+	\caption{Security flaws detected by seven auditing tools in TokenHook (the proposal) compared to top 10 ERC-20 tokens by market capitalization in May 2020. TokenHook has the lowest reported security issues (occurrences). \label{tab:summary}}
+\end{table}
+%</tab-summary>
+
+%<*tab-risks>
+\begin{table}[t]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbfg{Risk to Users} & \textbfg{Technical Reason} & \textbfg{Protection mechanism} \\ \hline
+			Inability to custody & Assets are locked in the exchange & \multirow{7}{*}{Implementation on the blockchain} \\ \cline{1-2}
+			Transparency in total supply & Total supply are not published &  \\ \cline{1-2}
+			Transparency in transactions & Transaction are not publicly disclosed &  \\ \cline{1-2}
+			Transparency in token holders & Ownership is confidential &  \\ \cline{1-2}
+			Interoperability with DeFi & Token works in isolation &  \\ \cline{1-2}
+			Challenges in auditing & Code of the token is not public &  \\ \cline{1-2}
+			Inadequate financial backing & Futures issued after the launch of the token &  \\ \hline
+			Possibility of Front-running & Exploited fund trade during well-known events & Randomized rebalancing or iceberg orders \\ \hline
+			Higher tracking error & Inefficient rebalancing algorithm & Optimization of rebalancing algorithms \\ \hline
+			Higher management fees & Inefficient cost management & Cross-trading or implementation on layer 2 chains \\ \hline
+			Multiple Withdrawal Attack & Withdraw from user wallet more than approved & Securing transferFrom method \\ \hline
+		\end{tabular}%
+	}
+	\caption{Protection mechanisms for users holding ERC-20 tokens or LVTs}
+	\label{tab:risks}
+\end{table}
+%</tab-risks>

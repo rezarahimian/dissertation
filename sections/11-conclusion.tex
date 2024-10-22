@@ -1,0 +1,50 @@
+% !TEX root = ../main.tex
+
+\chapter{Concluding Remarks}
+In this chapter, we summarize the key findings and contributions of our research. It highlights the significance of the results, how they were achieved, and offering suggestions for potential directions in future work.
+
+\section{Research Topics}
+\subsubsection{ERC-20 and Leveraged Tokens: Security, and User Protection in DeFi}
+The dominance of ERC-20 tokens in bridging decentralized and traditional financial systems motivated us to study their role in DeFi. Leveraged tokens (LVTs) were also examined due to their ERC-20 foundation and the complications they pose for users. While ERC-20 tokens and LVTs share the same DeFi ecosystem, their mechanics vary in complexity, highlighting the need for deeper research to understand how they affect user investments.
+
+On one end of the spectrum, ERC-20 tokens are relatively simple—standardized units of value that can be sent, received, and traded with predictable behavior across smart contracts. On the other hand, LVTs introduce complexities that pose investment risks, especially for users who may not fully understand their mechanics. The common ground in studying both ERC-20 tokens and LVTs is ultimately user protection. We address this by (i) improving the security of ERC-20 tokens, (ii) helping users better navigate the intricate risks associated with LVTs, and (iii) proposing a new decentralized model to resolve current shortcomings in LVTs.
+
+\subsubsection{Exploring the Complex Mechanics and Risks of Leveraged Tokens}
+Compared to ERC-20 tokens, LVTs introduce a much higher level of complexity. These tokens dynamically adjust their exposure to an underlying asset, involving intricate rebalancing mechanisms often triggered by market volatility. They are issued in three categories—centralized, decentralized, and hybrid—each responding differently to market conditions, which can affect user investments. For example, centralized LVTs may lack transparency, while decentralized and hybrid models could suffer from issues like liquidity constraints or technical inefficiencies, potentially impacting returns and increasing exposure to losses during volatile market conditions.
+
+Users may be attracted to LVTs for their potential to amplify returns, but they often do not fully comprehend how these mechanisms work or how value can be lost even when the underlying asset remains stable. A common misconception involves volatility decay, where users assume the token merely multiplies asset movements, unaware that frequent rebalancing can erode value over time. This makes leveraged tokens a more nuanced and risk-prone financial instrument, which we clarify for both investors and LVT developers.
+
+\subsubsection{Addressing Technical and Economic Challenges in DeFi with TokenHook and LeverEdge}
+LVTs offer a compelling case for study due to their unique role in amplifying financial positions within a decentralized framework. Inspired by leveraged ETFs (LETFs) in traditional finance, LVTs provide users with increased risk-reward exposure without the need for margin trading or complex collateral management. However, an analysis of over 1,600 leveraged tokens from 10 issuers reveals multiple shortcomings, including a lack of transparency, insufficient blockchain integration, deviations from stated leverage ratios, and susceptibility to front-running attacks. These issues arise from the absence of a standardized framework for LVTs, compromising their performance and market acceptance. 
+
+To address these deficiencies, we propose LeverEdge, an on-chain solution utilizing a hybrid L1-L2 approach to mitigate challenges such as latency, scalability, and gas fees. LeverEdge incorporates the security features of TokenHook and extends its ERC-20 functionality to resolve both technical and economic challenges in decentralized and centralized LVTs. It passes security checks and can serve as a reference model for implementing new LVTs or migrating current deployments.
+
+\section{Summary of contributions}
+\subsubsection{Resolving the Multiple Withdrawal Attack on ERC20 Tokens}
+We resolved the \mwa by first explaining the attack and proposing criteria for an acceptable solution that is compatible with ERC-20 specifications. After evaluating 10 proposed solutions, we concluded that none fully satisfied the constraints of the ERC-20 standard. Therefore, we propose two new solutions to mitigate the attack: one violates an ERC-20 specification, and the second mitigates the attack while adhering to standard specifications. The additional code required to prevent the attack consumes approximately 37\% more gas than a non-secure implementation, which we believe is acceptable for ensuring a secure ERC-20 token.
+
+\subsubsection{TokenHook: Secure ERC-20 smart contract}
+Considering that we have resolved the \mwa, the question now is what other vulnerabilities might threaten the security of the ERC-20 token and, more importantly, its holders. In this regard, we studied all known vulnerabilities and cross-check their relevance to ERC-20 token contracts, systematizing a comprehensive set of 82 distinct vulnerabilities and best practices. We then utilized our newly acquired specialized domain knowledge to provide a new ERC-20 implementation, TokenHook, which is open source and freely available in both Vyper and Solidity.
+
+TokenHook is positioned to increase software diversity: currently, no Vyper ERC-20 implementation is considered a reference implementation, and only one Solidity implementation is actively maintained (OpenZeppelin's~\cite{OpenZeppelin_Token}). Relative to this implementation, TokenHook has enhanced security properties and stronger compliance with best practices. Perhaps of independent interest, we reported on differences between Vyper and Solidity when implementing the same TokenHook contract. 
+
+We also used TokenHook as a benchmark implementation to explore the completeness and precision of seven auditing tools that are widely used in industry to detect security vulnerabilities. We conclude that while these tools are better than nothing, they do not replace the role of a security expert in developing and reviewing smart contract code.
+
+\subsubsection{A Shortfall in Investor Expectations of Leveraged Tokens}
+
+\subsubsection{LeverEdge: On-Chain Leveraged Tokens}
+
+%We analyze the security vulnerabilities of the top ten ERC-20 tokens (by market capitalization) on the Ethereum blockchain using seven different auditing tools. The results of these assessments will lead to the systematization of all security issues in ERC-20 tokens. Taking these security issues and the proposed solution for the \mwa into account, we propose a secure ERC-20 token implementation called TokenHook, which addresses all security concerns and can serve as a reference implementation for future ERC-20 token deployments.
+
+
+%By offering solutions such as TokenHook and LeverEdge, this work enhances user protection and strengthens the core infrastructure of DeFi, marking a valuable academic contribution. The advancements focus is on ERC-20 security and improvements in leveraged token design and functionality. These solutions provide better safeguards for retail investors by addressing issues like insufficient financial backing, transparency and unexpected return on investment.
+%\begin{enumerate}
+	%\item Resolving the \mwa that was opened since 2016 by providing a method that is fully compatible with ERC-20 specifications.
+%	\item Systematizing 82 security vulnerabilities and best practices to enhance the security of ERC-20 tokens.
+	%\item Introducing TokenHook, a fully compliant ERC-20 implementation that mitigates identified attacks.
+	%\item Reviewing 1,600 leveraged tokens and identifying 10 major shortcomings that may affect user investments.
+	%\item Analyzing 3 leveraged products used in LVTs for generating leverage on the blockchain.
+	%\item Evaluating 6 decentralized LVTs to determine how effectively they address existing issues.
+	%\item Proposing LeverEdge, a decentralized LVT solution that addresses most of the current issues, aiming to protect investors from unexpected losses.
+%\end{enumerate}
+

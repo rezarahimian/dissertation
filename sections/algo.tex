@@ -1,0 +1,68 @@
+% !TEX root = ../main.tex
+
+\begin{algorithm}
+	\caption{LVT Rebalancing Algorithm with 30-Minute Random Ordering}
+	\begin{algorithmic}[1]\label{alg:rebalancing}
+		\STATE \textbf{Inputs:}
+		\STATE $k$: Target leverage ratio (e.g., 2x, 3x, etc.)
+		\STATE $P_t$: Fund value at time $t$
+		\STATE $R_t$: Underlying asset return at time $t$
+		\STATE $F$: Rebalancing frequency (e.g., hourly, daily, etc.)
+		\STATE $\sigma_t$: Volatility at time $t$ (optional)
+		\STATE $H_t$: Hedging component at time $t$
+		\STATE $\Delta t$: Randomized 30-minute time adjustment for rebalancing
+		
+		\STATE Initialize Fund value at $t = 0$: $P_0 \gets \text{initialFundValue}$
+		\STATE $t \gets 0$
+		
+		\WHILE {market is open}
+		
+		\STATE \textbf{Step 1:} Calculate Fund Value at time $t$:
+		\STATE $P_t \gets P_{t-1} \times (1 + k \times R_t)$
+		
+		\STATE \textbf{Step 2:} Determine if rebalancing is needed:
+		\IF {TimeSinceLastRebalance($t$) $\geq F + \Delta t$ \OR ConditionMetForRebalancing($t$)}
+		
+		\STATE \textbf{Step 3:} Calculate Target Exposure:
+		\STATE $targetExposure_t \gets k \times P_t$
+		
+		\STATE \textbf{Step 4:} Adjust Fund Exposure:
+		\STATE $exposureAdjustment_t \gets targetExposure_t - currentExposure_t$
+		
+		\STATE \textbf{Step 5:} Update Fund Value:
+		\STATE $P_t \gets P_t + exposureAdjustment_t$
+		
+		\STATE \textbf{Step 6:} Account for Rebalancing Slippage (if volatility or frictions exist):
+		\IF {$\sigma_t > \text{threshold}$ \OR market frictions exist}
+		\STATE $slippage_t \gets \text{CalculateRebalancingSlippage}(\sigma_t, \text{marketConditions}_t)$
+		\STATE $P_t \gets P_t - slippage_t$
+		\ENDIF
+		
+		\STATE \textbf{Step 7:} Introduce random delay (up to 30 minutes):
+		\STATE $\Delta t \gets \text{Random}(0, 30 \text{ minutes})$
+		
+		\STATE LogRebalance($t$, $P_t$)
+		
+		\ENDIF
+		
+		\STATE \textbf{Step 8:} Move to the next time step:
+		\STATE $t \gets t + 1$
+		
+		\ENDWHILE
+		
+		\STATE \textbf{Function Definitions:}
+		\STATE \textbf{Function TimeSinceLastRebalance($t$)}:
+		\STATE \quad Return the time interval since the last rebalancing event: $t - t_{lastRebalance}$
+		
+		\STATE \textbf{Function ConditionMetForRebalancing($t$)}:
+		\STATE \quad Additional condition checks (e.g., market volatility spikes or leverage greater than threshold): $return \ condition\_flag$
+		
+		\STATE \textbf{Function CalculateRebalancingSlippage($\sigma_t$, marketConditions$_t$)}:
+		\STATE \quad Calculate slippage based on volatility or market conditions:
+		\STATE \quad $slippage \gets \sigma_t \times \text{transactionCosts} + \text{priceImpact}_t \times \text{liquidityConstraints}$
+		
+		\STATE \textbf{Function Random(min, max)}:
+		\STATE \quad Return a random number between min and max: $min + (max - min) \times rand()$
+		
+	\end{algorithmic}
+\end{algorithm}
