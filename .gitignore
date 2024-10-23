@@ -8,4 +8,7 @@
 **/*.blg
 **/*.vtc
 **/*.old
+**/*.lof
+**/*.lot
+**/*.toc
 **/main.pdf

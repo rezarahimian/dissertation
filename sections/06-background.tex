@@ -33,11 +33,11 @@ Ethereum allows DApps to accept and use ETH as its protocol-level cryptocurrency
 	\label{fig:interface}
 \end{figure}
 
-While numerous ERC-20 extensions or replacements have been proposed (\eg ERC-721, ERC-777, ERC-1155, \etc), ERC-20 remains prominent. Of the 2.5M smart contracts on the Ethereum network, 260K are tokens~\cite{TokenTracker}. 98\% of these tokens are ERC-20 tokens, demonstrating their widespread acceptance by the industry, smart contract developers and the Ethereum community. As shown in Figure \ref{fig:layers}, among the layers of the Ethereum blockchain, ERC-20 tokens fall under the \textit{Contract layer} in which back-end of DApps are executed.
+While numerous ERC-20 extensions or replacements have been proposed (\eg ERC-721, ERC-777, ERC-1155, \etc), ERC-20 remains prominent. Of the 2.5M smart contracts on the Ethereum network, 260K are tokens~\cite{TokenTracker}. 98\% of these tokens are ERC-20 tokens~\cite{TokenTracker}, demonstrating their widespread acceptance by the industry, smart contract developers and the Ethereum community. As shown in Figure \ref{fig:layers}, among the layers of the Ethereum blockchain, ERC-20 tokens fall under the \textit{Contract layer} in which back-end of DApps are executed.
 
 \begin{figure}[t]
 	\centering
-	\includegraphics[width=\textwidth,keepaspectratio]{blockchain.png}
+	\includegraphics[width=0.9\textwidth,keepaspectratio]{blockchain.png}
 	\caption{Smart contracts generally exist at the contract layer, leveraging the underlying consensus mechanisms for secure execution and state changes. The \textit{Contract Layer} can be considered a sublayer of the \textit{Application Layer}, focusing on how smart contracts execute and interact with blockchain transactions.}
 	\label{fig:layers}
 \end{figure}
@@ -65,7 +65,7 @@ Centralized LVTs are primarily managed by crypto exchanges and can be purchased 
 \subsection{Volatility drag}\label{appx:voldrag}
 Volatility measures the rate of change in the value of an asset. The value of a highly volatile asset can potentially spread out over a larger range of values and change dramatically over a short period of time in either direction. Conversely, the value of a low-volatility asset does not fluctuate significantly and tends to be more stable. In the equity market, for instance, when the price of a specific stock rises or falls by more than 1\% over a sustained period of time, it is considered a volatile stock, especially when compared to historical price movements~\cite{Investo_Volatility}.
 
-\textsl{Volatility drag} represents the rate at which the value of investments dissipates\anote{vol-drag}. As volatility increases and positions are held open for a longer period, the drag imposed by volatility accelerates, making it more destructive to the overall value of the investment~\cite{tsalikis2019can, SeekingAlpha_Volatility}. A similar effect occurs in LVTs, which impacts return on investment.
+\textsl{Volatility drag} represents the rate at which the value of investments dissipates\anote{vol-drag}. As volatility increases and positions are held for a longer period, the drag imposed by volatility accelerates, making it more destructive to the  value of the investment~\cite{tsalikis2019can, SeekingAlpha_Volatility}. A similar effect occurs in LVTs, which impacts the return.
 
 \ExecuteMetaData[sections/tables]{tab-voldrag}
 
@@ -91,7 +91,7 @@ LVTs derive their value from a leveraged fund, which in turn is based on a lever
 Conversely, the \textit{DeFi lending market} offers a more conservative approach, allowing LVTs to borrow assets through decentralized platforms such as Aave and Compound.\anote{lending} While perpetual futures offer higher leverage and come with greater risk, lending protocols provide lower leverage with reduced risk. The choice between using perpetual futures or lending protocols for LVTs is largely determined by the specific design and intended purpose of the token, as well as the user’s risk tolerance.
 
 \begin{figure}[t]
-	\includegraphics[width=\textwidth,keepaspectratio]{markets.png}
+	\includegraphics[width=0.9\textwidth,keepaspectratio]{markets.png}
 	\caption{A hierarchy of various types of crypto markets and instruments, delineates the positions of the Futures and Lending markets (in blue).}
 	\label{fig:markets}
 \end{figure}

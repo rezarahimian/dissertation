@@ -36,23 +36,6 @@ Unlike ERC-20 tokens, LVTs are not a critical infrastructure component of the bl
 \section{Contributions and Outline} 
 The structure of this dissertation follows a reverse chronological order, where the latest contributions are presented first, despite their dependence on earlier work. This approach highlights new contributions in rapidly evolving fields like blockchain.
 
-%\subsection{Contributions}
-%This dissertation makes several key contributions, which are summarized as follows:
-%\begin{enumerate}
-	%\item \textbf{Security Improvements for ERC-20 Tokens}: A thorough evaluation of the \mwa on ERC-20 tokens is conducted, proposing two new solutions to mitigate the vulnerability. One solution fully adheres to the ERC-20 standard while effectively addressing the attack.
-	
-	%\item \textbf{Systematization of ERC-20 Vulnerabilities}: The research systematizes existing vulnerabilities specific to ERC-20 tokens and then proposes a new implementation, TokenHook, which enhances security features of ERC-20 tokens in both Vyper and Solidity.
-	
-	%\item \textbf{Evaluation of Smart Contract Auditing Tools}: An analysis of seven static analysis tools for smart contracts identifies their limitations in detecting vulnerabilities specific to ERC-20 tokens. It then suggests areas for further improvement in auditing tools.
-	
-	%\item \textbf{Identifying deficiencies of Leveraged Tokens (LVTs)}: An analysis of over 1,600 leveraged tokens uncovers deficiencies such as a lack of transparency, inadequate financial backing, and risks of front-running. It offers a deeper understanding of their mechanics and the impact on investment returns.
-	
-	%\item \textbf{Proposing a New Decentralized LVT Model}: A fully decentralized design for LVTs, LeverEdge, is proposed, utilizing a hybrid L1-L2 model on Ethereum. It addresses the identified shortcomings of existing LVTs and offers a reference model aimed at safeguarding user investments.
-%\end{enumerate}
-%
-
-%In terms of scope, the dissertation focuses on two key areas within the DeFi ecosystem: (i) enhancing the security of ERC-20 tokens and, (ii) addressing shortcomings of LVTs. Security vulnerabilities in supplementary layers (\eg consensus, data, network) impact the entire Ethereum blockchain but do not necessarily affect ERC-20 tokens. Thus, vulnerabilities in these layers are considered beyond the scope of this work. In the case of LVTs, there remains a risk of front-running by miners, who could deliberately include rebalancing transactions in future blocks and delay them to prioritize their own. While this risk can be mitigated, it cannot be fully eliminated. In our design, miner-related front-running risks are excluded from the scope, but the risk posed by other traders has been thoroughly addressed.
-
 \subsection*{Chapter \ref{ch:background}: Background} We provide an overview of key blockchain technologies, including the ERC-20 token standard, security auditing tools, and practices used to assess smart contract vulnerabilities. Additionally, we explore the concept of financial leverage and its application in crypto markets, such as lending platforms and futures markets. This chapter establishes the fundamental principles and protocols necessary for understanding the decentralized design, security considerations, and market dynamics discussed in subsequent chapters.
 
 \subsection*{Chapter \ref{ch:shortfall}: A Shortfall in Investor Expectations of Leveraged Tokens}
@@ -98,3 +81,8 @@ Ethereum has undergone numerous security attacks, collectively causing more than
 	\item How effective are widely-used auditing tools in detecting security vulnerabilities in ERC-20 token implementations, and can they replace the need for expert human security reviews?
 \end{enumerate}
 \paragraph{Contributions.} We study all known vulnerabilities and cross-check their relevance to ERC-20 token contracts, systematizing a comprehensive set of 82 distinct vulnerabilities and best practices. We then use our specialized domain knowledge to provide a new ERC-20 implementation, TokenHook, which is open source and freely available in both Vyper and Solidity. It aims to increase software diversity, as currently no Vyper ERC-20 implementation is considered a reference, and only one Solidity implementation is actively maintained. Compared to this implementation, TokenHook offers enhanced security properties and stronger compliance with best practices. Finally, we use TokenHook as a benchmark to assess the completeness and precision of seven widely used auditing tools for detecting security vulnerabilities. We conclude that while these tools offer some value, they cannot replace the expertise of a security professional in developing and reviewing smart contract code.
+
+\subsection*{Chapter \ref{ch:remarks}: Concluding Remarks}
+We summarize the key findings and contributions of our research in this chapter. It highlights the significance of the results, how they were achieved, and offering suggestions for potential directions in future work.
+
+In terms of scope, the dissertation focuses on two key areas within the DeFi ecosystem: (i) enhancing the security of ERC-20 tokens and, (ii) addressing shortcomings of LVTs. Security vulnerabilities in supplementary layers (\eg consensus, data, network) impact the entire Ethereum blockchain but do not necessarily affect ERC-20 tokens. Thus, vulnerabilities in these layers are considered beyond the scope of this work. In the case of LVTs, there remains a risk of front-running by miners, who could deliberately include rebalancing transactions in future blocks and delay them to prioritize their own. While this risk can be mitigated, it cannot be fully eliminated. In our design, miner-related front-running risks are excluded from the scope, but the risk posed by other traders has been thoroughly addressed.
