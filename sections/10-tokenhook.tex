@@ -73,17 +73,22 @@ To determine the extent to which TokenHook addresses the outlined issues, We con
 	\item Slither Analyzer v0.6.12 by Crytic~\cite{SlitherDoc}.
 	\item Odin by Sooho~\cite{Odin}.
 \end{enumerate}
-Tables \ref{tab:result1}, \ref{tab:result2} and \ref{tab:result3} summarize audit results by including best practices and security vulnerabilities. To compile the list of 82, we referenced the knowledge-base of each tool~\cite{SECURIFYGIT,SMARTCHECK,MythX,ContractGuard,SlitherDoc}, understood each threat, manually mapped the audit to the corresponding SWC registry~\cite{SWC}, and manually determined when different tools were testing for the same vulnerability or best practice (which was not always clear from the tools' own descriptions). Since each tool employs different methodology to analyze codes (\eg comparing with violation patterns, applying a set of rules, using static analysis, \etc), there are false positives to manually check. Many false positives are not simply due to old/unmaintained rules but actually require tool improvement.
+
+
+
+Tables \ref{tab:result1}, \ref{tab:result2} and \ref{tab:result3} summarize audit results by including best practices and security vulnerabilities. To compile the list of 82, we referenced the knowledge-base of each tool~\cite{SECURIFYGIT,SMARTCHECK,MythX,ContractGuard,SlitherDoc}, understood each threat, manually mapped the audit to the corresponding SWC registry~\cite{SWC}, and manually determined when different tools were testing for the same vulnerability or best practice (which was not always clear from the tools' own descriptions). 
 
 \ExecuteMetaData[sections/tables]{tab-result1}
 \ExecuteMetaData[sections/tables]{tab-result2}
 \ExecuteMetaData[sections/tables]{tab-result3}
 
+Since each tool employs different methodology to analyze codes (\eg comparing with violation patterns, applying a set of rules, using static analysis, \etc), there are false positives to manually check. Many false positives are not simply due to old/unmaintained rules but actually require tool improvement.
+
+\ExecuteMetaData[sections/tables]{tab-summary}
+
 After manually overriding the false positives, the average percentage of passed checks for TokenHook reaches to 99.5\%. To pass the one missing check and reach a 100\% success rate across all tools, we prepared the same code in Solidity version 0.8.4, however it cannot be audited anymore with most of the tools. We repeated the same auditing process on the top ten tokens based on their market cap~\cite{TokenTracker}. The result of all these evaluation have been summarized in Table \ref{tab:summary} by considering false positives as failed audits. This provides the same evaluation conditions across all tokens. Since each tool uses different analysis methods, number of occurrences are considered for comparisons. For instance, MythX detects two \textit{re-entrancy} in TokenHook; therefore, two occurrences are counted instead of one. As it can be seen in Table \ref{tab:summary}, TokenHook has the least number of security flaws (occurrences) compared to other tokens.
 
 We stress that detected security issues for TokenHook are all false positives. We are also up-front that this metric is not a perfect indication of security. The other tokens may also have many/all false positives, and not all true positives can be exploited~\cite{VulExp}. Mainly, we want to show this measurement as being consistent with our claims around the security of TokenHook. If TokenHook, for example, had the highest number of occurrences, it would be a major red flag.
-
-\ExecuteMetaData[sections/tables]{tab-summary}
 
 \section{Contributions}
 We provide a detailed study of ERC-20 token security, collecting and deduplicating applicable vulnerabilities and best practices, examining the ability of seven audit tools. Most importantly, we provide a concrete implementation of ERC-20 called TokenHook.\anote{versions} It is designed to be secure against known vulnerabilities, and can serve as a second reference implementation to provide software diversity. We test it at Solidity version 0.5.11 (due to the limitation of the audit tools) and also provide it at version 0.8.4. Vyper implementation is also provided at version 0.2.8 to make ERC-20 smart contracts more secure and easier to audit.

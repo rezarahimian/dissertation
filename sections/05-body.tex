@@ -17,7 +17,7 @@ As shown in Figure \ref{fig:interaction}, our research primarily focuses on two 
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{interaction.png}
-	\caption[The Ethereum and DeFi ecosystem.]{Place of ERC-20 tokens and LVTs within the Ethereum and DeFi ecosystem. At the core, there is the Ethereum Blockchain layer, which supports smart contracts. ERC-20 tokens are divided into categories such as leveraged tokens, stablecoins, and utility tokens, connecting to DeFi protocols like lending platforms and decentralized exchanges. All interactions with tokens follow the interface defined by the ERC-20 standard.}
+	\caption[The Ethereum and DeFi ecosystem]{Place of ERC-20 tokens and LVTs within the Ethereum and DeFi ecosystem. At the core, there is the Ethereum Blockchain layer, which supports smart contracts. ERC-20 tokens are divided into categories such as leveraged tokens, stablecoins, and utility tokens, connecting to DeFi protocols like lending platforms and decentralized exchanges. All interactions with tokens follow the interface defined by the ERC-20 standard.}
 	\label{fig:interaction}
 \end{figure}
 
@@ -29,7 +29,7 @@ By examining ERC-20 tokens, we gain insights into the core mechanics of decentra
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{tokens.png}
-	\caption[Categorization of the different types of tokens.]{Categorization of the different types of tokens based on their functionality, standard protocols, and use cases within the Ethereum ecosystem. More than 98\% of fungible tokens follow ERC-20 standard.}
+	\caption[Categorization of the different types of tokens]{Categorization of the different types of tokens based on their functionality, standard protocols, and use cases within the Ethereum ecosystem. More than 98\% of fungible tokens follow ERC-20 standard.}
 	\label{fig:tokens}
 \end{figure}
 
@@ -90,4 +90,4 @@ Ethereum has undergone numerous security attacks, collectively causing more than
 \subsection{Chapter \ref{ch:remarks}: Concluding Remarks}
 We summarize the key findings and contributions of our research in this chapter. It highlights the significance of the results, how they were achieved, and offering suggestions for potential directions in future work.
 
-In terms of scope, the dissertation focuses on two key areas within the DeFi ecosystem: (i) enhancing the security of ERC-20 tokens and, (ii) addressing shortcomings of LVTs. Security vulnerabilities in supplementary layers (\eg consensus, data, network) impact the entire Ethereum blockchain but do not necessarily affect ERC-20 tokens. Thus, vulnerabilities in these layers are considered beyond the scope of this work. In the case of LVTs, there remains a risk of front-running by miners, who could deliberately include rebalancing transactions in future blocks and delay them to prioritize their own. While this risk can be mitigated, it cannot be fully eliminated. In our design, miner-related front-running risks are excluded from the scope, but the risk posed by other traders has been thoroughly addressed.
+In terms of scope, the dissertation focuses on two key areas within the DeFi ecosystem: (i) enhancing the security of ERC-20 tokens and, (ii) addressing shortcomings of LVTs. Security vulnerabilities in supplementary layers (\eg consensus, data, network) impact the entire Ethereum blockchain but do not necessarily ERC-20. Thus, vulnerabilities in these layers are considered beyond the scope. In the case of LVTs, there remains a risk of front-running by miners, who could deliberately include rebalancing transactions in future blocks and delay them to prioritize their own. In our design, miner-related front-running risks are excluded from the scope, but the risk posed by other traders has been thoroughly addressed.

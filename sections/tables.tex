@@ -20,7 +20,7 @@
 			\multicolumn{1}{|l|}{\textbfg{Total}} & \multicolumn{1}{c|}{\textbfg{102}} & \multicolumn{1}{c|}{\textbfg{403}} & \multicolumn{1}{c|}{\textbfg{368}} & \multicolumn{1}{c|}{\textbfg{476}} & \multicolumn{1}{c|}{\textbfg{260}} & \multicolumn{1}{c|}{\textbfg{1609}} & \textbfg{322} & \multicolumn{1}{c|}{\textbfg{654}} &  & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \cline{1-9}
 		\end{tabular}%
 	}
-	\caption{\textsl{Left table:} Number of issued leveraged tokens per year, average per year, and number of unique underlying assets, which we collected manually from different sources. An underlying asset might be used to create multiple tokens with different leverage levels. \textsl{Right table:} Characteristics of issued LVTs by different issuers. Only 20\% of tokens have been created on the blockchain. 99.9\% of LVTs use derivatives as the leveraged product, which is offered by the same issuer (Internal for Pionex as of Jan 2023). Except for \textsl{Index Coop}, the rest of the issuers use off-chain fund management systems. Rebalancing triggers for \textsl{Index Coop} are still off-chain.}
+	\caption[Leveraged tokens issuance and characteristics]{\textsl{Left table:} Number of issued leveraged tokens per year, average per year, and number of unique underlying assets, which we collected manually from different sources. An underlying asset might be used to create multiple tokens with different leverage levels. \textsl{Right table:} Characteristics of issued LVTs by different issuers. Only 20\% of tokens have been created on the blockchain. 99.9\% of LVTs use derivatives as the leveraged product, which is offered by the same issuer (Internal for Pionex as of Jan 2023). Except for \textsl{Index Coop}, the rest of the issuers use off-chain fund management systems. Rebalancing triggers for \textsl{Index Coop} are still off-chain.}
 	\label{tab:lvts}
 \end{table}
 %</tab-lvts>
@@ -46,7 +46,7 @@
 			\textbf{Total} & \textbf{264} & \textbf{390} & \textbf{654} & \textbf{1609} & \textbf{41\%} &  &  &  &  &  &  \\ \cline{1-6}
 		\end{tabular}%
 	}
-	\caption{\textsl{Left table:} Number of issued LVTs with delayed or missing futures products, analyzed using historical data and undisclosed information. To our knowledge, 41\% of the issued LVTs did not have sufficient financial backing at the time of launch. \textsl{Right table:} Rebalancing and fee deduction schedules, which we collected manually from the issuers' websites. Regardless of leverage type, rebalancing is performed daily at different times. Additionally, Threshold-Based (TBR) or Out of Range (OOR) rebalancing methods are used to trigger interim rebalancing. Fund expenses are also deducted at various times with variable percentages.}
+	\caption[Leveraged tokens financial backing and rebalancing]{\textsl{Left table:} Number of issued LVTs with delayed or missing futures products, analyzed using historical data and undisclosed information. To our knowledge, 41\% of the issued LVTs did not have sufficient financial backing at the time of launch. \textsl{Right table:} Rebalancing and fee deduction schedules, which we collected manually from the issuers' websites. Regardless of leverage type, rebalancing is performed daily at different times. Additionally, Threshold-Based (TBR) or Out of Range (OOR) rebalancing methods are used to trigger interim rebalancing. Fund expenses are also deducted at various times with variable percentages.}
 	\label{tab:missing}
 \end{table}
 %</tab-missing>
@@ -69,7 +69,7 @@
 			\multicolumn{1}{|l|}{\textbfg{Basket Delta}} & 2.70 & 594.21 & & \\ \hline
 		\end{tabular}%
 	}
-	\caption{The effect of front-running on the price of the underlying asset and the token during fund rebalancing is shown. The assumption in this example is a downtrend, where the fund initially receives funding fees from short traders and later pays funding fees as the price moves in the long direction of the token.}
+	\caption[Front-running impact during rebalancing]{The effect of front-running on the price of the underlying asset and the token during fund rebalancing is shown. The assumption in this example is a downtrend, where the fund initially receives funding fees from short traders and later pays funding fees as the price moves in the long direction of the token.}
 	\label{tab:frontrunning}
 \end{table}
 %</tab-frontrunning>
@@ -100,7 +100,7 @@
 			\multirow{-8}{*}{Crypto} & BTC3S & \multirow{-2}{*}{Gate.io} & \multirow{-8}{*}{Bitcoin (BTC-Perp)} & Short & 3 & \cellcolor[HTML]{F96B6C}2.10\% \\ \hline
 		\end{tabular}%
 	}
-	\caption{Comparison of leverage deviation in sample LVTs and LETFs from May 2022 to May 2023. A total of 268 data samples were collected from the issuers' websites.}
+	\caption[Leverage deviation in LVTs vs. LETFs]{Comparison of leverage deviation in sample LVTs and LETFs from May 2022 to May 2023. A total of 268 data samples were collected from the issuers' websites.}
 	\label{tab:deviation}
 \end{table}
 %</tab-deviation>
@@ -131,7 +131,7 @@
 			\textbfg{18} & 16-Apr-2021 12:24 & 0 & 2.029 & 1.956 & -0.073 \\ \hline
 		\end{tabular}%
 	}
-	\caption{BTCUP rebalancing history from May 2021 to April 2024, performed by Binance. The ``Gap'' column indicates the number of days between rebalancing events.}
+	\caption[BTCUP rebalancing gaps by Binance]{BTCUP rebalancing history from May 2021 to April 2024, performed by Binance. The ``Gap'' column indicates the number of days between rebalancing events.}
 	\label{tab:gap}
 \end{table}
 %</tab-gap>
@@ -158,7 +158,7 @@
 			STETHBULL4X & SETH &  &  &  & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \checkmark \\ \hline
 		\end{tabular}%
 	}	
-	\caption{List of Toros tokens on Layer 2 blockchains, each featuring varying leverage range, stated leverage, and different underlying assets (source: toros.finance).}
+	\caption[Toros tokens on Layer 2: leverage, range, assets]{List of Toros tokens on Layer 2 blockchains, each featuring varying leverage range, stated leverage, and different underlying assets (source: toros.finance).}
 	\label{tab:toros}
 \end{table}
 %</tab-toros>
@@ -199,7 +199,7 @@
 			\multicolumn{1}{|c|}{\textbfg{26}} & \textbfg{Rebalancing Schedule} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{17:43 UTC} & \multicolumn{1}{r|}{00:00 UTC} & \multicolumn{1}{r|}{06:12 UTC} & \multicolumn{1}{r|}{22:32 UTC} & 00:00 UTC \\ \hline
 		\end{tabular}%
 	}
-	\caption{The rebalancing details of the ETH5L (Ethereum 5x long token) over a 5-day trading period. Interim adjustments are triggered by market fluctuations that exceed the 10\% threshold in a trading day.}
+	\caption[ETH5L 5-day rebalancing details]{The rebalancing details of the ETH5L (Ethereum 5x long token) over a 5-day trading period. Interim adjustments are triggered by market fluctuations that exceed the 10\% threshold in a trading day.}
 	\label{tab:rebalancing}
 \end{table}
 %</tab-rebalancing>
@@ -227,7 +227,7 @@
 			&  &  & \textbfg{PNL (\%)} & -25.00\% & -43.75\% & -15.63\% & 3.36\% & -32.82\% & -46.25\% & -32.82\% \\ \hline
 		\end{tabular}%
 	}
-	\caption{Impact of volatility drag on the performance of 3x/5x Bitcoin leveraged tokens during a volatile week. It demonstrates why LVTs are not suitable for long-term investments.}
+	\caption[Volatility drag impact on BTC tokens]{Impact of volatility drag on the performance of 3x/5x Bitcoin leveraged tokens during a volatile week. It demonstrates why LVTs are not suitable for long-term investments.}
 	\label{tab:voldrag}
 \end{table}
 %</tab-voldrag>
@@ -250,7 +250,7 @@
 			Production readiness & BP. &  & + & \begin{tabular}[c]{@{}l@{}}- Vyper is not as mature as Solidity in terms of stability, documentation, etc.\\ - Solidity is adapted by a larger development community.\end{tabular} \\ \hline
 	\end{tabular}%
 	}
-	\caption{Comparison of TokenHook implementation in Vyper and Solidity. The plus sign can be considered as an advantage. However, both versions of TokenHook offer the same level of security.}
+	\caption[TokenHook in Vyper vs. Solidity: advantages comparison]{Comparison of TokenHook implementation in Vyper and Solidity. The plus sign can be considered as an advantage. However, both versions of TokenHook offer the same level of security.}
 	\label{tab:impl}
 \end{table}
 %</tab-impl>
@@ -279,7 +279,7 @@
 			\multirow{-16}{*}{\textbfg{Equity}} & SPXS & Direxion & S\&P500 & -2x & 1.0800\% & \cellcolor[HTML]{A4D07E}0.004286\% &  & \multirow{-16}{*}{\textbfg{Crypto}} & BTC3S & AscendEX & Bitcoin & -3x & 109.5000\% & \cellcolor[HTML]{F8696B}0.300000\% \\ \cline{1-7} \cline{9-15} 
 		\end{tabular}%
 	}
-	\caption{Comparison of the daily expense ratio in the equity and crypto markets. Each day, the daily fee is deducted from the price of ETFs/LETFs/LVTs, which negatively impacts the ROI. Therefore, investing in assets with lower daily rates (green rows) is less risky with higher return.}
+	\caption[Daily expense ratio in LVTs vs. LETFs]{Comparison of the daily expense ratio in the equity and crypto markets. Each day, the daily fee is deducted from the price of ETFs/LETFs/LVTs, which negatively impacts the ROI. Therefore, investing in assets with lower daily rates (green rows) is less risky with higher return.}
 	\label{tab:dailyfees}
 \end{table}
 %</tab-fee>
@@ -309,7 +309,7 @@
 			Daily funding   rate & N/A & \cellcolor[HTML]{CCFFCC}0.01-0.02\% & \cellcolor[HTML]{CCFFCC}0.01-0.02\% & 0.1-0.5\% & \cellcolor[HTML]{CCFFCC}0.01-0.02\% & \cellcolor[HTML]{CCFFCC}0.01-0.03\% & \cellcolor[HTML]{CCFFCC}0.01-0.03\% \\ \hline
 		\end{tabular}%
 	}
-	\caption{Comparison of on-chain LVTs. Deficiencies in the parameters highlighted in green have been fully rectified, and partially for parameters in yellow.}
+	\caption[Comparison of on-chain LVTs]{Comparison of on-chain LVTs. Deficiencies in the parameters highlighted in green have been fully rectified, and partially for parameters in yellow.}
 	\label{tab:compare}
 \end{table}
 %</tab-compare>
@@ -332,7 +332,7 @@
 			10 & Higher management fees & Cross-trading or implementation on the layer 2 chains. \\ \hline
 		\end{tabular}%
 	}
-	\caption{Summary of deficiencies in existing LVTs and proposed solutions.}
+	\caption[LVT deficiencies and proposed solutions]{Summary of deficiencies in existing LVTs and proposed solutions.}
 	\label{tab:solutions}
 \end{table}
 %</tab-solutions>
@@ -409,7 +409,7 @@
 			& & Allowing trusted forwarders to relay transactions & & & & & & & \\ \hline
 		\end{tabular}
 	\end{adjustbox}
-	\caption{Auditing results of 7 smart contract analysis tools on TokenHook. \pass=Passed audit, \fp=False positive, \fail=Failed audit, Empty=Not supported audit by the tool, \info=Informational, \noSWC=Tool specific audit (No SWC registry), BP=Best practice\label{tab:result1}}
+	\caption[TokenHook audit: 7 tool analysis results \#1]{Auditing results of 7 smart contract analysis tools on TokenHook. \pass=Passed audit, \fp=False positive, \fail=Failed audit, Empty=Not supported audit by the tool, \info=Informational, \noSWC=Tool specific audit (No SWC registry), BP=Best practice\label{tab:result1}}
 \end{table}
 %</tab-result1>
 
@@ -463,7 +463,7 @@
 			\multirow{2}{*}{54} & \multirow{2}{*}{\BP} & \tx{Too many digits} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\na} & \multirow{2}{*}{\pass} & \multirow{2}{*}{\na} \\ \cline{3-3} & & Using scientific notation to make the code readable and simpler to debug & & & & & & & \\ \hline
 		\end{tabular}
 	\end{adjustbox}	
-	\caption{Continuation of Table\ref{tab:result1}.\label{tab:result2}}
+	\caption[TokenHook audit: 7 tool analysis results \#2]{Continuation of Table\ref{tab:result1}.\label{tab:result2}}
 \end{table}
 %</tab-result2>
 
@@ -518,7 +518,7 @@
 			\multicolumn{3}{|c|}{\ccl\tx{\begin{tabular}[c]{@{}c@{}}99.5\% success rate in performed audits by considering\\ 'False Positives' and 'Informational' checks as 'Passed' \end{tabular}}}  & 100\% & 100\% & 100\% & 100\% & 100\% & 100\% & 97\% \\ \hline
 		\end{tabular}
 	\end{adjustbox}	
-	\caption{Continuation of Table\ref{tab:result2}.\label{tab:result3}}
+	\caption[TokenHook audit: 7 tool analysis results \#3]{Continuation of Table\ref{tab:result2}.\label{tab:result3}}
 \end{table}
 %</tab-result3>
 
@@ -543,7 +543,7 @@
 			\tx{USDT} & 12 & 29 & 8 & 17 & 46 & 55 & 30 & \tx{197} \\ \hline
 			\tx{LEO} & 32 & 25 & 8 & 23 & 70 & 75 & 19 & \tx{252} \\ \hline
 	\end{tabular}}
-	\caption{Security flaws detected by seven auditing tools in TokenHook (the proposal) compared to top 10 ERC-20 tokens by market capitalization in May 2020. TokenHook has the lowest reported security issues (occurrences). \label{tab:summary}}
+	\caption[Lowest security issues in TokenHook vs. top ERC-20s]{Security flaws detected by seven auditing tools in TokenHook (the proposal) compared to top 10 ERC-20 tokens by market capitalization in May 2020. TokenHook has the lowest reported security issues (occurrences). \label{tab:summary}}
 \end{table}
 %</tab-summary>
 
@@ -566,7 +566,7 @@
 			Multiple Withdrawal Attack & Withdraw from user wallet more than approved & Securing transferFrom method \\ \hline
 		\end{tabular}%
 	}
-	\caption{Protection mechanisms for users holding ERC-20 tokens or LVTs}
+	\caption[ERC-20 and LVT user protections mechanisms]{Protection mechanisms for users holding ERC-20 tokens or LVTs}
 	\label{tab:risks}
 \end{table}
 %</tab-risks>

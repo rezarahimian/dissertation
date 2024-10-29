@@ -1,7 +1,7 @@
 % !TEX root = ../main.tex
 
 \chapter{Background}\label{ch:background}
-Readers with a blockchain background may skip this chapter, as it covers foundational concepts that will be discussed in detail in the other chapters.
+Readers with a blockchain background may skip this chapter, as it covers foundational concepts that will be discussed in the other chapters.
 
 \section{Blockchain's Expanding Influence}
 Blockchain is a decentralized, untrusted network wherein participants (nodes) can freely join or leave. There is no trusted central authority as all nodes work together with various consensus protocols, such as Proof of Work or Proof of Stake, to keep the integrity of data. In the case of hardware or communication failure of one node, other nodes continue to process requests seamlessly since each has a complete and consistent copy of data. The main features of blockchain are not restricted to technical resilience only. According to various reputable advisories~\cite{Gartner,Reportlinker}, blockchain has reached an average annual growth of 51\% from 2016 to 2022 and surpassing to more than \$2 billion USD in revenue by the year 2022. With the scope of blockchain applications to be further developed combined with the projected growth, blockchain will be one of the key technologies in less conservative industries.
@@ -29,7 +29,7 @@ Ethereum allows DApps to accept and use ETH as its protocol-level cryptocurrency
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{interface.png}
-	\caption{The ERC-20 interface in Solidity defines a set of functions that any contract implementing the ERC-20 standard must include. These functions ensure interoperability and compatibility with other ERC-20 compliant contracts, wallets, exchanges, and decentralized applications.}
+	\caption[The ERC-20 interface in Solidity]{The ERC-20 interface in Solidity defines a set of functions that any contract implementing the ERC-20 standard must include. These functions ensure interoperability and compatibility with other ERC-20 compliant contracts, wallets, exchanges, and decentralized applications.}
 	\label{fig:interface}
 \end{figure}
 
@@ -38,7 +38,7 @@ While numerous ERC-20 extensions or replacements have been proposed (\eg ERC-721
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.9\textwidth,keepaspectratio]{blockchain.png}
-	\caption{Smart contracts generally exist at the contract layer, leveraging the underlying consensus mechanisms for secure execution and state changes. The \textit{Contract Layer} can be considered a sublayer of the \textit{Application Layer}, focusing on how smart contracts execute and interact with blockchain transactions.}
+	\caption[Ethereum layers and Smart Contract execution]{Smart contracts generally exist at the contract layer, leveraging the underlying consensus mechanisms for secure execution and state changes. The \textit{Contract Layer} can be considered a sub-layer of the \textit{Application Layer}, focusing on how smart contracts execute and interact with blockchain transactions.}
 	\label{fig:layers}
 \end{figure}
 
@@ -77,7 +77,7 @@ Volatility measures the rate of change in the value of an asset. The value of a 
 	\begin{figure}[t]
 		\centering
 		\includegraphics[width=0.9\textwidth,keepaspectratio]{voldrag.png}
-		\caption{LVT returns during a volatile week: the value of the initial investment (BTC in black) reached the breakeven point on day 7, but the returns of all LVTs remained negative due to the impact of volatility drag.}
+		\caption[Volatility drag effect in volatile market]{LVT returns during a volatile week: the value of the initial investment (BTC in black) reached the breakeven point on day 7, but the returns of all LVTs remained negative due to the impact of volatility drag.}
 		\label{fig:voldrag}
 	\end{figure}
 \end{example}
@@ -90,8 +90,8 @@ LVTs derive their value from a leveraged fund, which in turn is based on a lever
 On the other hand, \textit{DeFi lending market} represents a more conservative alternative. It proposes the ability for LVTs to borrow assets through decentralized platforms like Aave and Compound.\anote{lending} Perpetual futures allow for higher leverage and are more riskier, while lending protocols provide lower leverage with reduced risk. In general, a choice between perpetual futures and lending protocols in the operation of LVTs depends on (i) specific design and purpose of the token, (ii) token's risk factor, (iii) the depth of liquidity provided by the underlying platform and (iv) the investment time horizon (short-term or long-term).
 
 \begin{figure}[t]
-	\includegraphics[width=0.9\textwidth,keepaspectratio]{markets.png}
-	\caption{A hierarchy of various types of crypto markets and instruments, delineates the positions of the Futures and Lending markets (in blue).}
+	\includegraphics[width=\textwidth,keepaspectratio]{markets.png}
+	\caption[Crypto market hierarchy]{A hierarchy of various types of crypto markets and instruments, delineates the positions of the Futures and Lending markets (in blue).}
 	\label{fig:markets}
 \end{figure}
 
@@ -132,7 +132,7 @@ Traditional futures contracts have an expiration date known as the delivery date
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{fundingfee.png}
-	\caption{Contango or Backwardation conditions in the traditional futures market with a specific delivery date (left image). Price convergence over time in perpetual futures contracts, influenced by the funding rate (right image).}
+	\caption[Price convergence in the Futures market vs. Perpetuals]{Contango or Backwardation conditions in the traditional futures market with a specific delivery date (left image). Price convergence over time in perpetual futures contracts, influenced by the funding rate (right image).}
 	\label{fig:fundingfee}
 \end{figure}
 

@@ -12,7 +12,7 @@ Since the introduction of ERC-20 in November 2015, several vulnerabilities have 
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{multiple_withdrawal.png}
-	\caption{Steps to perform the \mwa in ERC-20 tokens.}
+	\caption[Steps for the \mwa in ERC-20 tokens]{Steps to perform the \mwa in ERC-20 tokens.}
 	\label{fig:mwa}
 \end{figure}
 
@@ -50,7 +50,7 @@ The summary of evaluations along with our two proposals is provided in Figure \r
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{evaluation_table.png}
-	\caption{Evaluation of the ten proposed mitigations for the \mwa.}
+	\caption[Evaluation of ten \mwa mitigation proposals]{Evaluation of the ten proposed mitigations for the \mwa.}
 	\label{fig:mitigations}
 \end{figure}
 
@@ -72,7 +72,7 @@ By implementing the CAS pattern~\cite{CompareSwap} in the \texttt{approve} metho
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{approve.png}
-	\caption{Resolving \mwa by implementing the CAS pattern in the \texttt{approve} method.}
+	\caption[Resolving \mwa in \texttt{approve}]{Resolving \mwa by implementing the CAS pattern in the \texttt{approve} method.}
 	\label{fig:approve}
 \end{figure}
 
@@ -86,7 +86,7 @@ As an alternative to Proposal 1, we can also consider securing the \texttt{trans
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{transferFrom.png}
-	\caption{Resolving \mwa by securing the \texttt{transferFrom} method.}
+	\caption[Resolving \mwa in \texttt{transferFrom}]{Resolving \mwa by securing the \texttt{transferFrom} method.}
 	\label{fig:transfer}
 \end{figure}
 

@@ -26,7 +26,7 @@ A distinctive feature of the current decentralized LVTs is the variation in dail
 
 \begin{figure}[t]
 	\includegraphics[width=\textwidth,keepaspectratio]{return.png}
-	\caption{The return of a 3x LVT in response to changes in the underlying asset's price is characterized as follows: The return described by Equation (\ref{eq:return1}) follows a linear pattern (blue lines), while the return in Equation (\ref{eq:return2}) follows a power function (green and red dotted lines). The \(x\)-axis represents the percentage return of the underlying asset, and the \(y\)-axis denotes the return factor of the LVT. The returns of long and short tokens are illustrated in the left and right diagrams, respectively. In Equation (\ref{eq:return2}), the negative \(k\) for short tokens amplifies positive returns when the underlying asset's price experiences a sharp decline, leading to the return discrepancy between long and short tokens. This divergence may not be ideal for all users.}
+	\caption[LVT return dynamics]{The return of a 3x LVT in response to changes in the underlying asset's price is characterized as follows: The return described by Equation (\ref{eq:return1}) follows a linear pattern (blue lines), while the return in Equation (\ref{eq:return2}) follows a power function (green and red dotted lines). The \(x\)-axis represents the percentage return of the underlying asset, and the \(y\)-axis denotes the return factor of the LVT. The returns of long and short tokens are illustrated in the left and right diagrams, respectively. In Equation (\ref{eq:return2}), the negative \(k\) for short tokens amplifies positive returns when the underlying asset's price experiences a sharp decline, leading to the return discrepancy between long and short tokens. This divergence may not be ideal for all users.}
 	\label{fig:return}
 \end{figure}
 
@@ -135,7 +135,7 @@ The second important factor riles on the fact that, the debt market is not effic
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=0.9\textwidth,keepaspectratio]{long.png}
-	\caption{Diagrams illustrating the creation of a 4x long (top) and short (bottom) position through automated looping, where users either deposit stablecoins (left) or post crypto as margin (right). Short positions differ from long positions in that they require full exposure to the notional value of the asset being shorted.}
+	\caption[Long vs. Short Position Creation]{Diagrams illustrating the creation of a 4x long (top) and short (bottom) position through automated looping, where users either deposit stablecoins (left) or post crypto as margin (right). Short positions differ from long positions in that they require full exposure to the notional value of the asset being shorted.}
 	\centering
 	\includegraphics[width=0.9\textwidth,keepaspectratio]{short.png}
 	\label{fig:looping}
@@ -158,7 +158,7 @@ LeverEdge follows a hybrid L1-L2 architecture, with smart contracts deployed on 
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{design.png}
-	\caption{The core components of LeverEdge consist of the DEX, responsible for handling necessary crypto exchanges. Futures positions are managed via DPP, while the rebalancing process is triggered by DAN. Users can interact directly with the token on L2 or rely on the gateways contract, which streamlines cross-layer contract interactions.}
+	\caption[LeverEdge components: DEX, DPP, DAN, and gateway]{The core components of LeverEdge consist of the DEX, responsible for handling necessary crypto exchanges. Futures positions are managed via DPP, while the rebalancing process is triggered by DAN. Users can interact directly with the token on L2 or rely on the gateways contract, which streamlines cross-layer contract interactions.}
 	\label{fig:design}
 \end{figure}
 
@@ -212,7 +212,7 @@ If changing the provider does not impact the token's functionality, it can be pe
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=0.85\textwidth,keepaspectratio]{model.png}
-	\caption{The design model of LeverEdge, our proposed decentralized leveraged token, is presented as a UML class diagram. The LVT contract inherits from the ERC-20, DPP, DEX, and DAN contracts. Contracts marked in gray are not implemented and are included only to illustrate possible alternatives. For example, a developer might prefer to use GMX instead of dYdX in a custom implementation.}
+	\caption[LeverEdge design model]{The design model of LeverEdge, our proposed decentralized leveraged token, is presented as a UML class diagram. The LVT contract inherits from the ERC-20, DPP, DEX, and DAN contracts. Contracts marked in gray are not implemented and are included only to illustrate possible alternatives. For example, a developer might prefer to use GMX instead of dYdX in a custom implementation.}
 	\label{fig:model}
 \end{figure}
 
@@ -373,7 +373,7 @@ Since the main token processing occurs on Layer 2, there is a need to consider g
 
 \begin{figure}[t]
 	\includegraphics[width=\textwidth,keepaspectratio]{gas.png}
-	\caption{Ethereum price in USD (left) and gas prices in Gwei (right) fluctuated from Sep-2023 to Sep-2024. Gas fluctuations were influenced by periods of high congestion or increased demand for transaction throughput. The maximum gas price during this period was 98.68 Gwei, recorded on March 5, 2024, while the minimum gas price was 2.22 Gwei on August 31, 2024 (source: \url{etherscan.io/chart}).}
+	\caption[Ethereum price and gas fluctuations]{Ethereum price in USD (left) and gas prices in Gwei (right) fluctuated from Sep-2023 to Sep-2024. Gas fluctuations were influenced by periods of high congestion or increased demand for transaction throughput. The maximum gas price during this period was 98.68 Gwei, recorded on March 5, 2024, while the minimum gas price was 2.22 Gwei on August 31, 2024 (source: \url{etherscan.io/chart}).}
 	\label{fig:gas}
 \end{figure}
 
