@@ -4,7 +4,6 @@
 \input{setup/packages}
 \input{setup/macros}
 \input{sections/footnotes}
-\usepackage[hidelinks]{hyperref}
 
 % = = = Layout
 \oddsidemargin 0.5in
@@ -25,9 +24,9 @@
 \setstretch{2}
 \input{sections/02-abstract}\newpage
 \setstretch{2}
-\input{sections/03-ack} \newpage
+\input{sections/03-ack}\newpage
 \setstretch{2}
-\input{sections/04-contents} \newpage   
+\input{sections/04-contents}\newpage
        
 % = = = Main Body 
 \setstretch{2.0}
@@ -41,8 +40,8 @@
 \input{sections/11-conclusion.tex}
 
 % = = = = = = Bibliography 
-\addcontentsline{toc}{chapter}{Bibliography}  %  Add Bibliography to TOC
-\singlespacing % save space in the bibliography
+\addcontentsline{toc}{chapter}{Bibliography}  % Add Bibliography to TOC
+\singlespacing % Save space in the bibliography
 \bibliographystyle{abbrv}
 {\small\bibliography{references.bib}}
 \nocite{*}
