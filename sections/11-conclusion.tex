@@ -6,7 +6,7 @@ ERC-20 remains the dominant token standard in the Ethereum ecosystem, and resolv
 
 Beyond technical improvements, this work focused in 2022 on the economic implications of ERC-20's use as a derivative token, particularly within the context of leveraged tokens (LVTs). The analysis identified 10 key shortcomings, ranging from transparency issues to risks associated with market volatility and rebalancing mechanisms. Solutions were proposed for each identified problem, demonstrating the potential for better investor outcomes through targeted improvements.
 
-To understand the landscape further in 2023, the research reviewed six existing decentralized LVTs to evaluate their effectiveness in mitigating these issues. This evaluation revealed gaps in current approaches and underscored the need for a more comprehensive solution. LeverEdge was proposed in 2024 as an hybrid L1-L2 model that (i) inherits the enhanced security properties of TokenHook and (ii) addresses most of the economic and operational deficiencies found in current LVTs. By integrating these advancements, LeverEdge ensures a more secure and reliable investment framework for users, making leveraged token interactions more transparent and aligned with user expectations.
+To understand the landscape further in 2023, the research reviewed six existing decentralized LVTs to evaluate their effectiveness in mitigating these issues. This evaluation revealed gaps in current approaches and underscored the need for a more comprehensive solution. LeverEdge was proposed in 2024 as an hybrid L1-L2 model that (i) inherits the enhanced security properties of TokenHook and (ii) addresses most of the economic and operational deficiencies found in current LVTs. By integrating these advancements, LeverEdge ensures a more secure and reliable investment framework for users.
 
 \section{Recommended Changes and Lessons for Ethereum from This Work}
 This work is guided by the specific solutions of TokenHook and LeverEdge. It focuses on strengthening investor protection by improving security, user experience, and economic performance within the Ethereum ecosystem. Changes that Ethereum should learn from this work and recommendations are follows.
@@ -19,6 +19,9 @@ Implementing time-limited or single-use permissions can mitigate the risk of ind
 
 \subsubsection{ERC-2612 Permit Functionality}
 Expanding the use of off-chain approval processes can minimize exposure. ERC-2612~\cite{eip2612} introduces a \texttt{permit} function that enables users to approve token transfers via off-chain signatures, eliminating the need for an on-chain \texttt{approve} transaction. This approach not only reduces gas costs but also enhances security by minimizing the attack surface associated with on-chain approvals.
+
+\subsection{Enhancing the Security of Other Fungible Tokens}
+Future research on ERC-20 tokens should broaden its focus to include other types of fungible tokens, including, but is not limited to, the exploration of ERC-777 and ERC-1155 tokens.
 
 %\subsection{Prioritization of Withdrawal Mechanism Security}
 %TokenHook's approach to addressing vulnerabilities such as the Multiple Withdrawal Attack highlights the importance of secure withdrawal protocols. Establishing standards for secure withdrawal practices can ensure consistent safety across ERC-20 implementations, reducing investor risk.
