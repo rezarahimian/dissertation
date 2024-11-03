@@ -37,7 +37,7 @@ As summarized in Table \ref{tab:solutions}, seven of ten deficiencies can be ove
 
 \ExecuteMetaData[sections/tables]{tab-solutions}
 
-\subsection{FLI tokens}\label{subsec:fli}
+\subsection{FLI Tokens}\label{subsec:fli}
 Index Coop launched FLI tokens in 2021 based on the Sets protocol~\cite{FLI_Sets}. These ERC-20 tokens consist of 4 smart contracts on the Mainnet and 6 on the Arbitrum blockchain. Tokens on the Mainnet and Arbitrum offer exposure to BTC and ETH up to 2x and 3x, respectively. Unlike most LVT issuers that create leverage through perpetual futures, FLI tokens directly use the lending market to create an over-collateralized leveraged position. While the FLI tokens are a step forward in decentralizing LVTs, it appears that they need optimization in some aspects:
 \begin{enumerate}[label={\ref{subsec:fli}.\arabic*},leftmargin=*]
 	\item \textit{Usability constraints:} FLI tokens may face usability issues due to supporting only ETH and BTC. Inverse and 3x tokens are available only on Arbitrum. Mainnet tokens have only 2x long exposure, and it is not possible to short BTC or ETH. Furthermore, U.S. residents are prohibited from buying these tokens~\cite{FLI_Restricted}. FLI tokens also has a \textit{Supply Cap} that in the past drove token prices higher~\cite{FLI_Shortage}.
@@ -47,7 +47,7 @@ Index Coop launched FLI tokens in 2021 based on the Sets protocol~\cite{FLI_Sets
 	\item \textit{Rebalancing risk:} Given that rebalancing involves constant price monitoring, FLI taps into off-chain servers for tracking leverage conditions before initiating the rebalancing process. Even though Index Coop uses a network of redundant servers for resilience, it still creates a single point of failure if issues arise with the company or all its servers become unreachable. Moreover, its \textit{Re-centering Speed} needs to be dynamically adjusted by market volatility for an optimal balance between tracking error minimization and rebalancing cost control.
 \end{enumerate}
 
-\subsection{Contango tokens}\label{subsec:contango}
+\subsection{Contango Tokens}\label{subsec:contango}
 Contango protocol is developed by a team incubated by Alpha Venture in 2021~\cite{Contango_Blog}. It utilizes the lending and spot markets to generate leveraged positions through Automated Stacking and Flashswap. Users open new positions by depositing collateral into the Contango protocol. The operating contract posts collateral (ETH) on a lending platform (Aave, Compound), borrows another asset (USDC) against it, swaps it for the original asset (via Uniswap, Paraswap), and repeats the process over multiple loops to increase exposure. The high costs associated with executing these loops are minimized by Flashswap, enabling desired leverage in a single atomic transaction.
 
 The protocol automatically mints an ERC-721 NFT whenever a user opens a new position. The NFT encapsulates details such as the underlying asset, leverage ratio, borrowing rates, and collateral. The designers claim that the implied funding rates for these positions are 2-3 times lower compared to traditional perpetuals. Volatility of the funding rate is also 2-4 times less,  making Contango a relatively attractive alternative~\cite{Contango_Doc,Contango_Medium}. Despite these advantages, Contango comes with certain limitations:
@@ -64,7 +64,7 @@ The protocol automatically mints an ERC-721 NFT whenever a user opens a new posi
 	\item \textit{Variable borrowing costs:} Although Contango fees are typically much lower than those in traditional perpetual contracts, relying on variable-rate lending markets can cause borrowing costs to fluctuate. It may potentially resulting in higher-than-expected costs during periods of market volatility.
 \end{enumerate}
 
-\subsection{Cube tokens}\label{subsec:cube}
+\subsection{Cube Tokens}\label{subsec:cube}
 Charm Finance launched Cube tokens in 2021 based on \textit{Parimutuel Pool} concept.\anote{parimutuel} Users deposit ETH into a smart contract, CubePool, to mint Cube tokens. These tokens can later be burned to withdraw the equivalent amount of ETH. The Cube token's value dynamically changes due to the underlying prices, pulled from Chainlink price feeds. While attempts at mitigating front-running and minimizing tracking errors through continuous rebalancing are in place, the current design falls short of meeting investor expectations on the following grounds:
 \begin{enumerate}[label={\ref{subsec:cube}.\arabic*},leftmargin=*]
 	\item \textit{Unequal profit distribution:} The return of LVTs is generally derived from the performance of the fund. In Cube, however, there is no fund—there are only losers paying winners, resembling a poker game where players compete for a shared prize or pot.
@@ -82,7 +82,7 @@ Charm Finance launched Cube tokens in 2021 based on \textit{Parimutuel Pool} con
 	\item \textit{Management risk:} Each pool maintains two super accounts, namely: Governance and Guardian. They have the privilege to execute emergency ETH withdrawals and to pause/unpause pool operations~\cite{Cube_Faq}. This kind of centralization may not precisely meet the risk appetite of some investors.
 \end{enumerate}
 
-\subsection{Squeeth tokens}\label{subsec:squeeth}
+\subsection{Squeeth Tokens}\label{subsec:squeeth}
 In 2021, Opyn launched Squeeth token (oSQTH). It offers nearly 2x exposure to ETH's volatility. Users can mint it via Opyn's app or trade it for ETH on DEXs~\cite{Squeeth_Doc}. However, oSQTH may face the following challenges in adoption:
 \begin{enumerate}[label={\ref{subsec:squeeth}.\arabic*},leftmargin=*]
 	\item \textit{Volatility speculation:} Squeeth's payoff is non-linear and tracks \( \text{ETH}^2 \). This feature increases sensitivity to changes in the ETH price as shown in Figure \ref{fig:return}. oSQTH acts more as of a proxy for ETH volatility, and traders holding them speculate on price movement "patterns" rather than directly on the underlying asset's price. This contrasts with the expected linear return of LVTs~\cite{Squeeth_Medium}.
@@ -94,7 +94,7 @@ In 2021, Opyn launched Squeeth token (oSQTH). It offers nearly 2x exposure to ET
 
 \ExecuteMetaData[sections/tables]{tab-toros}
 
-\subsection{Toros tokens}\label{subsec:toros}
+\subsection{Toros Tokens}\label{subsec:toros}
 Toros Finance issued Toros tokens in 2023 on L2 chains (see Table \ref{tab:toros} for the list of supported tokens). These tokens use different smart contracts from dHEDGE, Aave, and 1inch to automate both leverage and asset management. The system, while decentralized in nature, still suffers from some limitations:
 
 \begin{enumerate}[label={\ref{subsec:toros}.\arabic*},leftmargin=*]
@@ -107,7 +107,7 @@ Toros Finance issued Toros tokens in 2023 on L2 chains (see Table \ref{tab:toros
 	\item \textit{Manual rebalancing:} The rebalancing process in the dHEDGE protocol (and by extension, Toros) is not automated or on a fixed schedule. dHEDGE offers manual rebalancing, enabling fund managers to modify their positions according to their strategies and market conditions~\cite{dHEDGE_Design}. Nevertheless, this method comes with the potential drawback of experiencing delayed rebalancing in unpredictable markets, which could harm overall performance. Additionally, novice users may not have the appropriate resources to adequately track prices and react promptly, which could heighten the risk of incurring significant losses.
 \end{enumerate}
 
-\subsection{TLX tokens}\label{subsec:tlx}
+\subsection{TLX Tokens}\label{subsec:tlx}
 TLX tokens were introduced in 2024, offering up to 20x leverage exposure to more than 50 assets. Every token is supported by Synthetix Perp v2 futures. Individuals have the option to deposit either USDC or sUSD\anote{sUSD} and choose their desired asset, leverage, and trading direction. The procedure involves creating TLX tokens that can be exchanged for USDC or sUSD at a later time~\cite{TLX_Doc1,TLX_Doc2}. To gain wider market acceptance, TLX tokens might need some optimizations:
 \begin{enumerate}[label={\ref{subsec:tlx}.\arabic*},leftmargin=*]
 	\item \textit{Chain restrictions:} The limitation of TLX tokens to the Optimism network hinders users from accessing it on other L2 chains. Moreover, individuals familiar with the Mainnet or other L2 alternatives might experience decreased liquidity and may not perceive a benefit in transitioning to Optimism, resulting in less usability.
@@ -124,8 +124,8 @@ Even though there have been notable attempts to decentralize LVTs, a closer look
 
 \ExecuteMetaData[sections/tables]{tab-compare}
 
-\section{LeverEdge: New proposal}\label{sec:proposal}
-\subsection{Leveraged product selection}\label{subsec:selection}
+\section{LeverEdge: New Proposal}\label{sec:proposal}
+\subsection{Leveraged Product Selection}\label{subsec:selection}
 Our research highlights three possible choices for leveraged products in creating a fund for LVTs: (i) futures contracts, (ii) leveraged positions based on debt, and (iii) synthetic assets. Although the debt market may have lower and more consistent funding rates, perpetual contracts offer unique benefits such as easy access to both long and short positions and efficient rebalancing.
 
 The selection of leveraged products involves various important factors: Firstly, LVTs are designed for experienced traders who have a thorough understanding of market dynamics. They generally focus on immediate price changes rather than long-term holding strategies. Day traders face one of two outcomes: either the price trend matches their initial analysis, enabling them to make a profit within the same trading day, or the analysis proves to be incorrect, leading to a swift exit to reduce losses. They do not stay in positions for an extended amount of time to take advantage of the reduced costs in debt-based LVTs. Additionally, they are aware that if the market goes against them, the probability of a positive turnaround on the same trading day is slim~\cite{fung2000intraday}. As a result, LVTs are specifically made for skilled traders, with inexperienced users being more prone to losses, if they hold LVTs for a long time. 
@@ -141,7 +141,7 @@ The second important factor riles on the fact that, the debt market is not effic
 	\label{fig:looping}
 \end{figure}
 
-\subsection{Resolving LVT shortcomings}\label{subsec:resolve}
+\subsection{Resolving LVT Shortcomings}\label{subsec:resolve}
 Mentioned risks affect the financial efficiency and reliability of LVTs, leading to less acceptance by investors. Implementing LVT on the blockchain can address these issues by bringing transparency to the total supply, transactions, holders, custody, auditing and financial backing. On-chain implementation should therefore be used by LVTs to mitigate the associated risks in centrally issued tokens.
 
 Another discussed issue is the effect of front-running which may place LVT in a position where it needs to execute more trades than otherwise required for simple rebalancing (see Section \ref{subsec:frontrunning} for more details). Front-running has always been a challenge in traditional markets, but most issues have been controlled through regulatory oversight~\cite{SEC_Oversight}. Lacking that regulation in crypto, the risk can be mitigated by: (i) camouflaging trading intent through enhanced algorithms that randomize both the timing and size of rebalancing trades, making it harder to predict when and how much of the underlying asset will be bought or sold; (ii) cross-trading between long and short pairs, whereby issuers internally swap matching positions to minimize the need for open market transactions, as token issuers can act as the LP and match orders for different LVTs in-house; and (iii) collaborating with liquidity providers and market makers (\eg permissioned pools by Aave Arc and Fireblocks~\cite{Aave_Arc}), allowing issuers to discreetly source liquidity and execute large orders without revealing their trading intentions.
@@ -152,15 +152,15 @@ A further issue with LVTs is tracking error (leverage deviation). Some of the wa
 
 Another notable difference in LVTs is high management fees compared to LETFs that can be minimized by: (i) using advanced algorithms (iceberg or reverse orders), which enable the optimization of the timing and size of trades to minimize slippage and bid-ask spread costs; (ii) cross-trading between long and short funds, since issuers operating both can internalize trades by directly matching orders of funds sharing the same underlying assets. This internal matching at better prices further reduces slippage and transaction costs; (iii) using L2 chains~\cite{Gangwal_2022} in combination with MultiCall transactions~\cite{hughes2021multicall}, which further lower the operating cost.
 
-\subsection{Design model}
-LeverEdge follows a hybrid L1-L2 architecture, with smart contracts deployed on both L1 and L2 chains. The L2 contract acts as the primary code, managing the core functionality of the token. Users can directly interact with the L2 contract if their funds are already on L2, or they can access the token via the gateway contract on L1, which accepts funds and facilitates communication with L2 (see cross-layer interaction in Figure \ref{fig:design}). The gateway contract serves as the main entry point for L1 users, enabling interaction with L2 through Bridge or Inbox contracts. Thus, user-facing operations in LeverEdge can occur on either L1 or L2, depending on where users hold their funds, while trading activities remain on L2 to ensure faster, more cost-efficient execution. This hybrid architecture optimizes scalability and security by allowing the L1 contract to handle secure finality, while L2 focuses on high-speed execution and cost reduction.
-
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{design.png}
 	\caption[LeverEdge components: DEX, DPP, DAN, and gateway]{The core components of LeverEdge consist of the DEX, responsible for handling necessary crypto exchanges. Futures positions are managed via DPP, while the rebalancing process is triggered by DAN. Users can interact directly with the token on L2 or rely on the gateways contract, which streamlines cross-layer contract interactions.}
 	\label{fig:design}
 \end{figure}
+
+\subsection{Design Model}
+LeverEdge follows a hybrid L1-L2 architecture, with smart contracts deployed on both L1 and L2 chains. The L2 contract acts as the primary code, managing the core functionality of the token. Users can directly interact with the L2 contract if their funds are already on L2, or they can access the token via the gateway contract on L1, which accepts funds and facilitates communication with L2 (see cross-layer interaction in Figure \ref{fig:design}). The gateway contract serves as the main entry point for L1 users, enabling interaction with L2 through Bridge or Inbox contracts. Thus, user-facing operations in LeverEdge can occur on either L1 or L2, depending on where users hold their funds, while trading activities remain on L2 to ensure faster, more cost-efficient execution. This hybrid architecture optimizes scalability and security by allowing the L1 contract to handle secure finality, while L2 focuses on high-speed execution and cost reduction.
 
 LeverEdge design allows issuers to choose DeFi partners according to factors like service fees, security, and performance. As shown in Figure \ref{fig:design}, it incorporates three main groups of DeFi providers: (i) DEX for trading crypto assets on-chain, (ii) DPP for establishing leveraged positions with perpetual contracts, and (iii) DAN for monitoring conditions and executing smart contract functions upon meeting predetermined criteria, such as daily or interim rebalancing.
 
@@ -300,7 +300,7 @@ Rebalancing in LeverEdge managed by the \texttt{rebalance()} method, which logs 
 
 \input{sections/algo.tex}
 
-\subsection{Resolved deficiencies}\label{subsec:resolved}
+\subsection{Resolved Deficiencies}\label{subsec:resolved}
 Taking advantage of all on-chain capabilities enables us to create a completely decentralized system, that is a new solution for deploying LVTs. To our knowledge, LeverEdge is the first design for LVTs that utilizes decentralized perpetual contracts instead of debt or synthetic positions. It tackles the shortcomings of existing centralized tokens and fixes issues in decentralized tokens, as outlined briefly below.
 \begin{enumerate}[label={\ref{sec:proposal}.\arabic*},leftmargin=*]
 	\item \textit{Self-custodial:} LeverEdge is deployed on the blockchain, offering token holders complete control of ownership. This enables them to move the token to their cryptocurrency wallets or to other individuals whenever they want.
@@ -328,14 +328,12 @@ As shown in Table \ref{tab:compare}, most of the identified issues have been add
 	
 In summary, in LeverEdge, we have fully addressed eight of the ten raised issues, and the other two are related to the nature of the blockchain and preference of the issuer, respectively.
 
-
-
-\subsection{Blockchain implementation}
+\subsection{Blockchain Implementation}
 LeverEdge is deployed on the Ethereum Testnet, where various DeFi partners run active instances.\anote{imp} This allows for thorough testing of the token before its official launch on the Mainnet. As is widely known, the EVM\anote{evm} can only execute low-level code known as bytecode (binary data). Developers typically write smart contracts in high-level programming languages like Solidity or Vyper, which are then compiled into bytecode for execution. This creates a challenge when analyzing smart contracts, as security assessments often rely on the bytecode rather than the original source code. Several techniques, similar to those used in traditional software quality assurance, are employed to inspect smart contracts for vulnerabilities (\eg static analysis, dynamic analysis, taint analysis, \etc). While these automated tools do not guarantee absolute security, they offer valuable insights and checks to help identify potential issues.
 
 We used Slither (by Trail of Bits) and MythX (by ConsenSys) for auditing smart contracts of LeverEdge. Slither relies on static analysis and taint analysis. MythX uses a combination of static analysis, symbolic execution, and fuzzing for a more comprehensive dynamic analysis~\cite{Slither_Doc,SlitherSetup,MythX_Doc}. Slither flagged potential vulnerabilities related to the \textit{low-level call} in the \texttt{call.value()} method, which addresses the \textit{freezing Ether} issue by allowing the owner to withdraw ETH. Following the \textit{Istanbul} hard fork (EIP-1884), using \texttt{call.value()} is the recommended method for transferring ETH from smart contracts~\cite{EIP-1884}. MythX, the second audit tool, identified a potential \textit{Re-entrancy} attack in the \textit{noReentrancy} modifier~\cite{Reentrancy}. Modifiers in Solidity are commonly used to enforce checks before executing functions~\cite{SolidityModifer}, and employing them is a standard technique for mitigating re-entrancy attacks~\cite{ReentrancyGuard}. Since Slither did not detect this issue, it appears specific to MythX. Both reported issues were deemed false positives, and the code successfully passed all required security checks.
 
-\subsection{Simulation results}
+\subsection{Simulation Results}
 We demonstrate how LeverEdge can handle current challenges effectively. Introducing a 30-minute variation in the timing of rebalancing conceals the specific time of rebalancing, minimizing the possibility of front-running (Algorithm \ref{alg:rebalancing}). Furthermore, the use of MultiCall transactions reduce management fees by as much as 14\%. The majority of token operations have been carried out on Layer 2, leading to a reduction in transaction costs and daily rebalancing expenses of up to 99.6\%. This reduces the negative effect of fees on the erosion of token value.
 
 \subsubsection{Performance Testing}\label{appx:testing}
@@ -447,4 +445,3 @@ Leveraged tokens (LVTs) aim to mirror the advantages of leveraged ETFs (LETFs) s
 Since 2019, over 1,600 leveraged tokens have been offered by various issuers. Previous research has identified ten key deficiencies in the technical and financial performance of these tokens. In this work, we review these issues and propose practical solutions. Decentralization stands out as the primary approach for resolving these deficiencies, along with enhancements to the internal algorithms governing the tokens. We also assess the performance of six decentralized tokens, identifying areas where further optimization is still needed.
 
 To address these shortcomings, we introduce LeverEdge as a fully decentralized LVT, integrating the proposed solutions. Utilizing a hybrid L1-L2 architecture allows for seamless interaction with higher L1 liquidity while taking advantage of the faster execution and reduced fees on L2 chains. We evaluate LeverEdge in similar situations as other LVTs, demonstrating its capability to tackle the recognized flaws. It employs perpetual futures for generating leverage and incorporates a cross-chain mechanism for compatibility with various L2 ecosystems. Its design is focused on composability and deployed on the Ethereum blockchain. The open-source code has successfully passed security audits, serving as a blueprint for developing new decentralized LVTs or transitioning current centralized versions to decentralized options.
-
