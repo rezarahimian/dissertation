@@ -23,14 +23,20 @@ Expanding the use of off-chain approval processes can minimize exposure. ERC-261
 \subsection{Enhancing the Security of Other Fungible Tokens}
 Future research on ERC-20 tokens should broaden its focus to include other types of fungible tokens, including, but is not limited to, the exploration of ERC-777 and ERC-1155 tokens.
 
-%\subsection{Prioritization of Withdrawal Mechanism Security}
-%TokenHook's approach to addressing vulnerabilities such as the Multiple Withdrawal Attack highlights the importance of secure withdrawal protocols. Establishing standards for secure withdrawal practices can ensure consistent safety across ERC-20 implementations, reducing investor risk.
+\subsection{Prioritization of Withdrawal Mechanism Security}
+TokenHook's approach to addressing vulnerabilities such as the Multiple Withdrawal Attack highlights the importance of secure withdrawal protocols. Establishing standards for secure withdrawal practices can ensure consistent safety across ERC-20 implementations, reducing investor risk.
 
 \subsection{User-Friendly and Transparent Token Interactions}
 Simplifying how users interact with tokens can enhance protection by reducing user error. Recommendations include wallet-level support for contextual allowances and token-level permissions. Integrating clear interfaces and notifications regarding token approvals, their limits, and duration can empower users to make informed decisions and prevent common mistakes such as granting excessive or indefinite permissions. Transparent interaction mechanisms should also include detailed transaction summaries that explain the purpose and consequences of each action, ensuring users know exactly how their tokens are being utilized. 
 
 \subsection{Leveraging Account Abstraction (AA) for Enhanced User Protection}
 Account abstraction (AA) has the potential to significantly improve user protection by allowing transactions to be bundled and executed under user-defined conditions~\cite{Ethereum_AA}. It can integrate security checks directly into wallet operations. This makes it possible for users to implement tailored permissions and rules for token interactions, adding an extra layer of protection on top of the built-in safeguards of the TokenHook and LeverEdge.
+
+\subsection{Improved Rebalancing Algorithms}
+One of the primary issues with LVTs is the volatility decay resulting from frequent rebalancing. Future research could explore more efficient and adaptive rebalancing algorithms that minimize value erosion, especially in high-volatility markets. Machine learning techniques could be applied to predict optimal rebalancing times, reducing the negative impact of market swings on leveraged positions
+
+\subsection{Cross-Chain Leveraged Tokens}
+Future work could investigate creating LVTs that function seamlessly across multiple blockchain ecosystems. Cross-chain capabilities could improve access to different DeFi platforms and liquidity pools, enhancing the usability and adoption of LVTs while reducing exposure to a single network's limitations or issues.
 
 %While AA complements the work done on the token contract level, it can be studied in aspects such as increased complexity, development cost, user experience and backward compatibility.
 
