@@ -2,13 +2,20 @@
 
 \chapter{Concluding Remarks}\label{ch:remarks}
 \section{High-Level Contributions and Their Broader Context}
-ERC-20 remains the dominant token standard in the Ethereum ecosystem, and resolving longstanding vulnerabilities within its framework is essential for protecting investors. One significant achievement in this research was addressing the Multiple Withdrawal Attack in 2019, an issue that has persisted since 2016. Following this, our study extended its scope in 2020 to investigate other potential security concerns within ERC-20 implementations. By systematizing 82 distinct vulnerabilities and best practices applicable to ERC-20, the research laid the groundwork for improved token safety. TokenHook, developed in 2021 as part of this work, addresses these vulnerabilities and provides stronger compliance and security compared to the top 10 ERC-20 tokens currently in use.
+ERC-20 remains the dominant token standard in the Ethereum ecosystem, and resolving longstanding vulnerabilities within its framework is essential for protecting investors. One achievement in this research was addressing the Multiple Withdrawal Attack in 2019, an issue that has persisted since 2016. Following this, our study extended its scope in 2020 to investigate other potential security concerns within ERC-20 implementations. By systematizing 82 distinct vulnerabilities and best practices applicable to ERC-20, the research laid the groundwork for improved token safety. TokenHook, developed in 2021 as part of this work, addresses these vulnerabilities and provides stronger compliance and security compared to the top 10 ERC-20 tokens currently in use.
 
 Beyond technical improvements, this work focused in 2022 on the economic implications of ERC-20's use as a derivative token, particularly within the context of leveraged tokens (LVTs). The analysis identified 10 key shortcomings, ranging from transparency issues to risks associated with market volatility and rebalancing mechanisms. Solutions were proposed for each identified problem, demonstrating the potential for better investor outcomes through targeted improvements.
 
 To understand the landscape further in 2023, the research reviewed six existing decentralized LVTs to evaluate their effectiveness in mitigating these issues. This evaluation revealed gaps in current approaches and underscored the need for a more comprehensive solution. LeverEdge was proposed in 2024 as an hybrid L1-L2 model that (i) inherits the enhanced security properties of TokenHook and (ii) addresses most of the economic and operational deficiencies found in current LVTs. By integrating these advancements, LeverEdge ensures a more secure and reliable investment framework for users.
 
-In summary, TokenHook directly addresses vulnerabilities inherent in ERC-20 tokens, enhancing security and safeguarding users against potential threats such as the Multiple Withdrawal Attack. LeverEdge, on the other hand, addresses the structural and operational deficiencies found in current leveraged tokens (LVTs), providing a more secure and transparent model for users seeking leveraged exposure to cryptocurrency assets.
+As shown in Figure \ref{fig:timeline}, the summary of contributions from 2019 to 2024 highlights that, TokenHook directly addresses vulnerabilities inherent in ERC-20 tokens, enhancing security and safeguarding users against potential threats such as the Multiple Withdrawal Attack. LeverEdge, on the other hand, addresses the structural and operational deficiencies found in current leveraged tokens (LVTs), providing a more secure and transparent model for users seeking leveraged exposure to cryptocurrency assets.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{timeline.png}
+	\caption[Contributions summary]{Summary of contributions from 2019 to 2024}
+	\label{fig:timeline}
+\end{figure}
 
 \section{Recommended Changes and Lessons for Ethereum from This Work}
 This work is guided by the specific solutions of TokenHook and LeverEdge. It focuses on strengthening investor protection by improving security, user experience, and economic performance within the Ethereum ecosystem. Changes that Ethereum should learn from this work and recommendations are follows.
