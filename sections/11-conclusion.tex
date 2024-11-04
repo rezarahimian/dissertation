@@ -1,7 +1,8 @@
 % !TEX root = ../main.tex
 
 \chapter{Concluding Remarks}\label{ch:remarks}
-\section{High-Level Contributions and Their Broader Context}
+
+\section{The Broader Context}
 ERC-20 remains the dominant token standard in the Ethereum ecosystem, and resolving longstanding vulnerabilities within its framework is essential for protecting investors. One achievement in this research was addressing the Multiple Withdrawal Attack in 2019, an issue that has persisted since 2016. Following this, our study extended its scope in 2020 to investigate other potential security concerns within ERC-20 implementations. By systematizing 82 distinct vulnerabilities and best practices applicable to ERC-20, the research laid the groundwork for improved token safety. TokenHook, developed in 2021 as part of this work, addresses these vulnerabilities and provides stronger compliance and security compared to the top 10 ERC-20 tokens currently in use.
 
 Beyond technical improvements, this work focused in 2022 on the economic implications of ERC-20's use as a derivative token, particularly within the context of leveraged tokens (LVTs). The analysis identified 10 key shortcomings, ranging from transparency issues to risks associated with market volatility and rebalancing mechanisms. Solutions were proposed for each identified problem, demonstrating the potential for better investor outcomes through targeted improvements.
@@ -17,11 +18,11 @@ As shown in Figure \ref{fig:timeline}, the summary of contributions from 2019 to
 	\label{fig:timeline}
 \end{figure}
 
-\section{Recommended Changes and Lessons for Ethereum from This Work}
-This work focuses on strengthening investor protection by improving security, user experience, and economic performance within the Ethereum ecosystem. Changes that Ethereum should learn from this work and recommendations are follows.
+\section{Recommendations for Ethereum}
+This work focuses on strengthening investor protection by improving security, user experience, and economic performance within the Ethereum ecosystem. Recommended changes and lessons learned from this work are as follows. 
 
 \subsection{Reform of Approval Mechanisms}
-The current \texttt{approve} and \texttt{transferFrom} methods poses risks, particularly through indefinite allowances. To enhance investor protection, the Ethereum ecosystem should consider more secure approval models such as session-based (time-limited) or single-use approvals. Session-based approvals allow users to grant token allowances for a specific period or session, automatically expiring afterward. Single-use approvals permit a one-time token transfer, after which the allowance is revoked. These mechanisms reduce the risk of unauthorized or forgotten permissions, enhancing overall security and user protection.
+The current \texttt{approve} and \texttt{transferFrom} methods pose risks, particularly through indefinite allowances. To enhance investor protection, the Ethereum ecosystem should consider more secure approval models such as session-based (time-limited) or single-use approvals. Session-based approvals allow users to grant token allowances for a specific period or session, automatically expiring afterward. Single-use approvals permit a one-time token transfer, after which the allowance is revoked. These mechanisms reduce the risk of unauthorized or forgotten permissions, enhancing overall security and user protection.
 
 \subsection{Prioritization of Withdrawal Mechanism Security}
 TokenHook's approach to addressing vulnerabilities such as the Multiple Withdrawal Attack highlights the importance of secure withdrawal protocols. Establishing standards for secure withdrawal practices can ensure consistent safety across ERC-20 implementations, reducing investor risk.
