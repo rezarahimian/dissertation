@@ -42,9 +42,7 @@ While numerous ERC-20 extensions or replacements have been proposed (\eg ERC-721
 	\label{fig:layers}
 \end{figure}
 
-\section{Complexity of Leveraged Tokens}
-
-\subsection{Models and Dynamic}
+\section{ERC-20 Tokens vs. Leveraged Tokens vs. Leveraged ETF}
 A typical Exchange-Traded Fund (ETF) is a weighted basket of stocks from firms with a common characteristic (\eg they all operate in a specific sector or have a high market capitalization). The issuer splits the basket into shares, which are bought and sold on exchanges just like individual stocks~\cite{liebi2020effect}.
 \begin{example}
 	One of the most traded ETFs is the \textsl{SPDR S\&P500 ETF} with ticker symbol \textsl{SPY}. It is issued by SSGA\anote{ssga} and holds a basket of stocks from nearly 500 publicly traded companies that are part of the S\&P500\anote{SP500} index. The S\&P500 index has globally served as a gauge for the performance of the U.S. stock market as a whole, due to its depth and diversity. Since SPY tracks the S\&P500 index, investors can gain broad exposure and diversify their investment risk across the stock performance of 500 companies in 11 sectors without the logistics or starting capital required to buy shares in all these companies.
@@ -57,13 +55,13 @@ Leveraged ETFs (LETFs) were introduced in 2006 and are ETFs designed to amplify 
 
 The equivalent of an LETF in the cryptocurrency and crypto-asset (``crypto'') market could be thought of as Leveraged Token (LVT). Similar to LETFs, LVTs use leveraged products offered in the crypto market to outperform the underlying asset’s return on a daily basis. While the majority of LETFs are actively managed funds\anote{active}, LVTs employ one of three management models: (i) centralized, (ii) decentralized, and (iii) hybrid. 
 
-Centralized LVTs are mainly managed by crypto exchanges. They can be purchased on the spot market (similar to cryptocurrency) or directly from the issuer. Decentralized LVTs operate on the blockchain through smart contracts and can be traded without relying on a third-party. Hybrid LVTs are basically decentralized LVTs that are traded on centralized crypto exchanges. Users prefer centralized exchanges for their user-friendly interfaces, continuous-time order books (rather than automated market makers, which are the only trading mechanism efficient enough to run on-chain), and increased liquidity due to aggregated buy and sell orders.\anote{liquidity} However, this model introduces certain disadvantages resulting from the combination of centralized and decentralized systems (\eg functional complexities, security concerns, custodial risks, \etc.).
+Centralized LVTs are mainly managed by crypto exchanges. They can be purchased on the spot market (similar to cryptocurrency) or directly from the issuer. Decentralized LVTs operate on the blockchain through ERC-20 contracts and can be traded without relying on a third-party. Hybrid LVTs are basically decentralized LVTs that are traded on centralized crypto exchanges. Users prefer centralized exchanges for their user-friendly interfaces, continuous-time order books (rather than automated market makers, which are the only trading mechanism efficient enough to run on-chain), and increased liquidity due to aggregated buy and sell orders.\anote{liquidity} However, this model introduces certain disadvantages resulting from the combination of centralized and decentralized systems (\eg functional complexities, security concerns, custodial risks, \etc.).
 
 \begin{example}
 	An issuer may offer BTC3L/BTC3S as a pair of LVTs tracking Bitcoin (BTC) as the underlying asset. A Bitcoin futures contract (BTC-Perp\anote{btc-perp}) can be used as the leveraged product to outperform Bitcoin in the short term. The number three in the LVT name represents the multiplier (triple-leveraged), while L/S stands for going long/short on the market.\anote{long-short} BTC3L gains 3\% when the price of Bitcoin rises by 1\%, and loses 3\% for every 1\% price drop. Conversely, when Bitcoin drops by 1\%, BTC3S gains 3\%, and loses 3\% for every 1\% price rise.
 \end{example}
 
-\subsection{Volatility Drag}\label{appx:voldrag}
+\section{Volatility Drag in LVTs}\label{appx:voldrag}
 Volatility can be defined as the rate of variation in values of a particular asset. A high volatility asset's value can be spread out over a bigger range of value and may change dramatically either way in a very short period of time. In contrast, the price of a low-volatility asset does not vary much and mostly remains constant. An example could be that, in the equity market, whenever the price of any particular stock has been continuously moved up or down by less than 1\%, for some considerable period of time. It is thought to be a volatile stock, especially when it passes this 1\% range compared to historical price~\cite{Investo_Volatility}.
 
 \textsl{Volatility drag} represents the rate at which the value of investments dissipates\anote{vol-drag}. As volatility increases and positions are held for a longer period, the drag imposed by volatility accelerates, making it more destructive to the  value of the investment~\cite{tsalikis2019can,SeekingAlpha_Volatility}. A similar effect occurs in LVTs, which impacts the return.
@@ -85,7 +83,7 @@ Volatility can be defined as the rate of variation in values of a particular ass
 
 As the above example suggests, volatility negatively impacts the performance of LVT investments over time, as previously discussed in the case of LETFs~\cite{giese2010performance, trainor2011daily}. While volatility can be beneficial in the short term, compounded daily returns produce unexpected mathematical outcomes. Investors would have made some profits if they had closed their positions on the first or second day, but holding the position through the third day would have resulted in a loss. To minimize the impact of volatility drag on LVTs, it is better to use them as short-term investments in markets with strong trends and momentum.
 
-\subsection{Leverage Products}
+\section{Leverage Products}
 LVTs derive their value from a leveraged fund, which in turn is based on a leveraged product. This leveraged product usually originates from either the \textit{Crypto derivatives market} or the \textit{DeFi lending market} as highlighted in Figure \ref{fig:markets}. In the \textit{derivatives market}, Perpetual futures (Perps)\anote{perps} have become rather popular due to their flexibility. Because Perps do not expire, they can be held forever, with the additional advantage of being able to make leveraged positions in LVTs without any risk of contract expiration or rollover.
 
 On the other hand, \textit{DeFi lending market} represents a more conservative alternative. It proposes the ability for LVTs to borrow assets through decentralized platforms like Aave and Compound.\anote{lending} Perpetual futures allow for higher leverage and are more riskier, while lending protocols provide lower leverage with reduced risk. In general, a choice between perpetual futures and lending protocols in the operation of LVTs depends on (i) specific design and purpose of the token, (ii) token's risk factor, (iii) the depth of liquidity provided by the underlying platform and (iv) the investment time horizon (short-term or long-term).
@@ -98,36 +96,36 @@ On the other hand, \textit{DeFi lending market} represents a more conservative a
 
 LVTs essentially abstract away the hassle of maintaining a leveraged position for their users. They simplify management of such a position without requiring users to constantly monitor and manage margin requirements. But how do these LVTs actually generate the leverage on behalf of users? Both crypto derivatives and DeFi lending markets provide efficient ways to obtain desired leverage factors for LVTs. With relatively modest leverage ratio in LVTs-commonly up to 5x-one could be used to obtain leverage in either market. Leverage is typically generated by using dated futures, perpetual contracts, or synthetic assets in derivatives markets. In the DeFi lending market, leverage comes from the ability of borrowing funds and posting collateral. Reinvesting borrowed amount can increase exposure and generate leverage for LVTs (see the highlighted options in Figure \ref{fig:markets}). 
 
-\subsubsection{Dated Futures}
+\subsection{Dated Futures}
 They can be used in LVTs to provide leverage till specific expiration date.\anote{dated} Unlike perpetual futures, which have no expiration date, dated futures contracts require the position to be settled or rolled over by the expiration date. LVTs using dated futures must roll over contracts before their expiration date to maintain the leveraged exposure. The smart contract managing the LVT sells the expiring contracts and simultaneously buys new contracts with a later expiration date. This process ensures that the fund continues to maintain its leveraged exposure to the underlying asset without interruption. 
 
 The rollover process can sometimes result in minor expenses or discrepancies in the leverage ratio, depending on the difference between the price of the expiring and new contract, referred to as the ``roll yield''. When the futures market is in Contango\anote{contango}, the roll yield is negative, and the LVT pays a premium to maintain its leveraged positions. In Backwardation\anote{backwardation}, the roll yield is positive, and the LVT benefits from the lower price of the new contract. Another risk is that the smart contract may fail to call the renewal or roll over process of the expired futures. This leads to a few consequences, including loss of leverage exposure, token devaluation, and possible liquidation in DEXs if holders rush to sell off the under-collateralized tokens.
 
-\subsubsection{Perpetual Futures}
+\subsection{Perpetual Futures}
 They can be utilized as leveraged products in LVTs without the need to roll over an expiring contract on a particular date in the future. This reduces slippage and costs associated with dated futures. However, perpetual futures impose funding fees as opposed to dated futures (see section \ref{appx:funding} for more information). Another disadvantage of them is that they are highly sensitive to volatility in the market. During big market swings, maintenance margin can rapidly change which increases the risk of forced liquidation. This makes perpetual futures more appropriate for short-term investment compared to buy-and-hold use cases.
 
-\subsubsection{Automated Stacking}\label{appx:looping}
+\subsection{Automated Stacking}\label{appx:looping}
 Looped positions (\ie borrowing, re-depositing, and borrowing again) on fixed-rate\anote{fixed} lending markets can be seen as somewhat analogous to dated futures contracts. Comparatively, variable-rate\anote{dynamic} positions on lending markets can be interpreted as the funding rate of the position, which in turn can be seen as a perpetual futures.
 
-\subsubsection{Synthetic Assets}
+\subsection{Synthetic Assets}
 These assets allow users to get exposure to a variety of asset price movements without necessarily owning them. Synthetic assets that track the value of fiat currencies, stocks, commodities, cryptocurrencies, and other financial derivatives already exist. They are usually backed by collateral (often in crypto) to ensure they maintain their value. For example, Synthetix protocol use collateralized debt to mint synthetic assets. They enable users to create tokens that track the value of real-world assets.
 
-\subsubsection{Summary of Key Differences}\label{appx:summary}
-An LVT is primarily utilized by investors who need a tokenized fund to simplify the management of leveraged positions with liquidation protection. Hence, identification of the target user becomes critical when choosing the right leveraged product before the issuance of LVTs. For the case of long-term investors, normally the debt market is cost-effective due to less daily depreciation of tokens. As described below, the futures are suitable for short-term investors.
+\subsection{Summary of Key Differences}\label{appx:summary}
+An LVT is primarily utilized by investors who need a tokenized fund. It simplifies the management of leveraged positions with liquidation protection. Hence, identification of the target user becomes critical when choosing the right leveraged product for issuing LVTs. For long-term investors, normally the debt market is cost-effective due to less daily depreciation of tokens. As described below, the futures are suitable for short-term investors.
 
 \begin{itemize}
 	\item \textit{Perpetual futures:} Best used for short-term leveraged tokens, which need rebalancing quite often. The positive feature of these tokens is their flexibility and the possibility of high leverage in both the short and long directions.
 	
-	\item \textit{Debt-based leveraged positions:} This strategy is more suitable for stable or conservative LVTs. However, it comes with the risks of liquidation and interest rate fluctuation. The maximum leverage is also constrained by the load-to-debt (LTV) ratio set by lenders and differs among blockchains. Besides, creating LVTs with short position is more challenging compared with long positions since overcollateralization is necessary (see the process of generating a short token in Figure \ref{fig:looping}).
+	\item \textit{Debt-based leveraged positions:} This strategy is more suitable for conservative LVTs. However, it comes with the risks of liquidation and interest rate fluctuation. The maximum leverage is constrained by the load-to-debt (LTV) ratio set by lenders and differs among blockchains. Creating LVTs with short position is more also challenging compared with long positions since overcollateralization is necessary (see the process of generating a short token in Figure \ref{fig:looping}).
 	
 	\item \textit{Synthetic assets:} Synthetic assets give leveraged exposure completely decentralized, but at the risk of overcollateralization and concerns of oracle accuracy. These characteristics make them less attractive to be used in LVTs.
 \end{itemize}
 Advantages and disadvantages of each leveraged product over key factors vary based on different investment horizons and issuer's preference. The main purpose of using LVTs is by the short-term traders who try to realize a profit in the same trading day. Therefore, perpetual futures shall be the most suitable to be utilized in LVTs. However, a debt-based LVT with different characteristics, which will be explained in the following chapters, may be suitable for issuers with long-term investment horizons.
 
-\subsection{Key Factors in Crypto Futures Market}\label{appx:futures}
+\section{Key Factors in Crypto Futures Market}\label{appx:futures}
 A futures contract, as explained, is an agreement to buy or sell a cryptocurrency at a given price at some future date. The Crypto Futures Market is the place where these contracts are traded, and such trading allows profiting on crypto price movements. Futures often refers to a class of derivatives that are traded in a market with much use of leverage, enabling traders to increase their exposure with less initial capital. It also allows hedging and speculation on future price movements. Perpetual futures are one of the dominant kinds of contracts in this market as users can keep a leveraged position open with no expiration date. The risks associated with these group of derivatives are mostly confined to the \textsl{Funding Rate} and the event of \textsl{Liquidation}.
 
-\subsubsection{Funding Fee}\label{appx:funding}
+\subsection{Funding Fee}\label{appx:funding}
 Traditional futures contracts have an expiration date known as the delivery date. Futures prices converge with the spot price on this date. Before that, the market can be in one of two conditions: Contango or Backwardation~\cite{cme2020contango}. When the market is in Contango, futures are traded at a premium to the spot price (\ie they are more expensive). When the market is in Backwardation, futures are traded at a discount to the spot price (\ie they are cheaper than the spot price)~\cite{abd2019contango}. Contango or Backwardation may occur due to shocks in supply or demand, carrying costs, geopolitical situations, pandemics, etc. Ultimately, traditional futures prices converge with the spot price by the delivery date (see Figure \ref{fig:fundingfee}).
 
 \begin{figure}[t]
@@ -145,12 +143,12 @@ Funding fee represents a periodic payment exchanged between traders holding long
 \end{equation}
 where \( r_f \) denotes the interest rate of the fiat currency and \( r_c \) denotes the interest rate of the cryptocurrency. Subsequently, \((\frac{P_t - S_t}{S_t})\) and \((r_f - r_c)\) are the "premium or discount" and "interest rate" components, with weighted coefficients \( \alpha \) and \( \beta \), respectively. Both \( \alpha \) and \( \beta \) are adjustable parameters that exchanges or DeFi platforms might calibrate based on market conditions, volatility, and the desired level of price convergence between the perpetual contract and the spot market. For instance, a high \( \alpha \) might be used in a highly volatile market to quickly correct large premiums or discounts, while a high \( \beta \) might be more relevant in a market where the cost of capital (borrowing rates, staking yields, etc.) is highly volatile~\cite{Binance_Funding,BitMEX_Funding}.
 
-\subsubsection{Liquidation}\label{subsec:liquidation}
+\subsection{Liquidation}\label{subsec:liquidation}
 It happens when the positions in futures are automatically closed because of an inability to maintain a margin. The main drivers for liquidation are:
 \begin{itemize}
 	\item \textsl{Adverse price movements:} The market moves against the position, which may lead to a decline in the notional value and reduced account equity.
 	
-	\item \textsl{Unfavorable funding rates:} Whenever the funding rate is negative for the position, it causes a constant drain from the initial margin balance. Over time, the funding payments erode the initial margin, dropping it below the maintenance margin level-usually 5-10\% of the initial margin. The exchange will then liquidate the position without user consent.
+	\item \textsl{Unfavorable funding rates:} Whenever the funding rate is negative, it causes a constant drain from the initial margin. Over time, the funding payments erode the initial margin, dropping it below the maintenance margin level-usually 5-10\% of the initial margin. The exchange will then liquidate the position.
 \end{itemize}
 The liquidation process is triggered when the price of the underlying asset falls below the \textit{liquidation price}, at which the value of the initial margin is no longer adequate. The liquidation price ($P_{Liq}$) can be calculated as \(P_{Liq} = P_{Ent} \times \left( 1 - \frac{1 - \mu}{\lambda} \right)\), where \(\lambda\) represents the leverage of the position (negative for shorts), \(P_{Ent}\) is the entry price and \(\mu\) is maintenance margin in percentage.
 
