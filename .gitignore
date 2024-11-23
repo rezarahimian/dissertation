@@ -11,5 +11,5 @@
 **/*.lof
 **/*.lot
 **/*.toc
-**/*.xmpi
+**/pdfa.xmpi
 **/main.pdf
